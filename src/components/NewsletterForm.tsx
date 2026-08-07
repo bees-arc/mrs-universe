@@ -18,7 +18,7 @@ export default function NewsletterForm() {
 
         {/* Description */}
         <p className="text-center font-avenir-medium text-[14px] md:text-[16px] text-[#58585a] leading-[1.8] tracking-[1px] mb-8">
-          Sign up for my newsletter and receive encouraging words, lifestyle content, business-minded tips, and a first look at my latest projects right in your inbox.
+          Sign up for my newsletter and receive encouraging words, health & wellness tips, mental health insights, and updates on my Mrs. Universe advocacy projects right in your inbox.
         </p>
 
         {/* Mailchimp form action */}
@@ -53,7 +53,7 @@ export default function NewsletterForm() {
             />
           </div>
 
-          {/* Anti-spam field for Mailchimp */}
+          {/* Anti-spam field */}
           <div style={{ position: "absolute", left: "-5000px" }} aria-hidden="true">
             <input
               type="text"

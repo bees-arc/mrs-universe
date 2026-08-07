@@ -17,59 +17,27 @@ interface NavItem {
 
 const navItems: NavItem[] = [
   { label: "Home", href: "/" },
-  { label: "Meet Demi", href: "/about-me/" },
+  { label: "Meet Maleka", href: "#home-intro" },
   {
-    label: "Books",
-    href: "#",
+    label: "Healthcare & Care",
+    href: "#services",
     dropdown: [
-      { label: "A Crown That Lasts", href: "https://demitebow.com/a-crown-that-lasts/" },
-      { label: "Princess Paris Finds Her Purpose", href: "https://demitebow.com/paris/" },
-      { label: "Knowing Who You Are Devotional", href: "https://demitebow.com/devo" },
-    ],
-  },
-  { label: "Unbreakable", href: "/unbreakable/" },
-  {
-    label: "Partner with me",
-    href: "/services/",
-    dropdown: [
-      { label: "Speaker", href: "/services/#speaker" },
-      { label: "Entrepreneur", href: "/services/#entrepreneur" },
-      { label: "Social Influencer", href: "/services/#influencer" },
-      { label: "Purposeful People Partner", href: "/purposeful-people/#purposefulpeoplebrandpartner" },
-      { label: "Modeling", href: "/services/#modeling" },
-      { label: "Gallery", href: "/services/#gallery" },
+      { label: "Aesthetic Nursing", href: "#services" },
+      { label: "Psychiatric Care", href: "#services" },
+      { label: "Holistic Wellness", href: "#services" },
     ],
   },
   {
-    label: "Philanthropy",
-    href: "/philanthropy/",
+    label: "Advocacy & Causes",
+    href: "#services",
     dropdown: [
-      { label: "Demi's Story", href: "/philanthropy/#demisstory" },
-      { label: "Join the fight", href: "/philanthropy/#jointhefight" },
+      { label: "Domestic Violence", href: "#services" },
+      { label: "Cancer Awareness", href: "#services" },
+      { label: "Youth Development", href: "#services" },
     ],
   },
-  { label: "Resources", href: "/resources/" },
-  {
-    label: "Blog",
-    href: "/blog/",
-    dropdown: [
-      { label: "All", href: "/blog/" },
-      { label: "Beauty and Style", href: "/category/beauty-style/" },
-      { label: "Ministry", href: "/category/ministry/" },
-      { label: "Business-minded", href: "/category/business-minded/" },
-      { label: "Health and Wellness", href: "/category/health-wellness/" },
-    ],
-  },
-  {
-    label: "Portfolio",
-    href: "/portfolio/",
-    dropdown: [
-      { label: "Portfolio Reel", href: "/portfolio/#reel" },
-      { label: "Magazine Covers", href: "/portfolio/#covers" },
-      { label: "Featured Online", href: "/portfolio/#online" },
-      { label: "Media Features", href: "/portfolio/#news" },
-    ],
-  },
+  { label: "Family & Legacy", href: "#highlights" },
+  { label: "Contact", href: "#newsletter" },
 ];
 
 export default function Navbar() {
@@ -77,7 +45,7 @@ export default function Navbar() {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
 
   return (
-    <header className="relative w-full z-50 flex flex-col">
+    <header className="relative w-full z-50 flex flex-col bg-white">
       {/* Top Border Line Image */}
       <div className="w-full relative h-[10px] md:h-[12px] overflow-hidden">
         <Image
@@ -90,22 +58,21 @@ export default function Navbar() {
       </div>
 
       {/* Main Header Container */}
-      <div className="w-full bg-[#efe7e2] flex flex-col items-center pt-6 pb-2 px-4">
-        {/* Brand Logo */}
-        <div className="mb-4 relative w-[300px] h-[35px] md:w-[480px] md:h-[50px] lg:w-[600px] lg:h-[63px]">
-          <Link href="/">
-            <Image
-              src="/images/logo-demi-tebow.png"
-              alt="Demi-Leigh Tebow Logo"
-              fill
-              priority
-              className="object-contain"
-            />
+      <div className="w-full bg-[#efe7e2] flex flex-col items-center pt-6 pb-4 px-4">
+        {/* Brand Text Logo (Elegant Typographic Design) */}
+        <div className="mb-4 text-center">
+          <Link href="/" className="flex flex-col items-center group">
+            <span className="font-serif text-[28px] md:text-[36px] lg:text-[44px] font-bold text-charcoal tracking-[6px] uppercase transition-colors group-hover:text-terracotta leading-tight">
+              Maleka Morani
+            </span>
+            <span className="font-sans text-[11px] md:text-[13px] text-terracotta font-bold tracking-[8px] uppercase mt-1">
+              Mrs. Universe
+            </span>
           </Link>
         </div>
 
         {/* Desktop Menu */}
-        <nav className="hidden lg:flex items-center justify-center bg-white/70 backdrop-blur-sm border border-terracotta/20 rounded-full px-6 py-2 shadow-sm max-w-6xl w-auto">
+        <nav className="hidden lg:flex items-center justify-center bg-white/70 backdrop-blur-sm border border-terracotta/20 rounded-full px-6 py-2.5 shadow-sm max-w-6xl w-auto mt-2">
           <ul className="flex items-center gap-6 xl:gap-8">
             {navItems.map((item) => (
               <li
@@ -182,7 +149,7 @@ export default function Navbar() {
 
       {/* Mobile Menu Drawer */}
       {mobileMenuOpen && (
-        <nav className="lg:hidden w-full bg-white border-b border-terracotta/20 animate-fadeIn z-40">
+        <nav className="lg:hidden w-full bg-white border-b border-terracotta/20 animate-fadeIn z-45">
           <ul className="flex flex-col py-4">
             {navItems.map((item) => (
               <li key={item.label} className="border-b border-[#efe7e2] last:border-0">
