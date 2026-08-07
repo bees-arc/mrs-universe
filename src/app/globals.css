@@ -1,26 +1,67 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Aire";
+  font-display: swap;
+  src: url("/fonts/AireBoldPro.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Avenir-Light";
+  font-display: swap;
+  src: url("/fonts/Avenir-Light-07.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Avenir-Medium";
+  font-display: swap;
+  src: url("/fonts/Avenir-Medium-09.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Avenir Bold";
+  font-display: swap;
+  src: url("/fonts/AvenirNextLTPro-Bold.otf") format("opentype");
+}
+
+@theme {
+  --font-serif: "Aire", Georgia, serif;
+  --font-sans: "Avenir-Light", sans-serif;
+  --font-avenir-medium: "Avenir-Medium", sans-serif;
+  --font-avenir-bold: "Avenir Bold", sans-serif;
+  
+  --color-terracotta: #bd8e7c;
+  --color-terracotta-dark: #b6907f;
+  --color-terracotta-light: #eaded8;
+  --color-terracotta-very-light: #efe7e2;
+  --color-charcoal: #58585a;
+  --color-dark-grey: #666666;
+}
+
 :root {
   --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --foreground: #58585a;
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar matching the website styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #bd8e7c;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b6907f;
 }
