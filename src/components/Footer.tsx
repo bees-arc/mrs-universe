@@ -1,221 +1,87 @@
-import Image from "next/image";
+"use client";
+
 import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="w-full flex flex-col bg-white pt-16">
-      {/* Top Footer Section */}
-      <div className="max-w-7xl mx-auto w-full px-6 md:px-12 grid grid-cols-1 md:grid-cols-3 gap-12 pb-12">
-        {/* Column 1: Logo & Social Links */}
-        <div className="flex flex-col items-center md:items-start text-center md:text-left border-b md:border-b-0 pb-8 md:pb-0 md:border-r border-[#efe7e2] pr-0 md:pr-12">
-          {/* Typographic Logo */}
-          <div className="flex flex-col mb-8">
-            <span className="font-serif text-[24px] font-bold text-charcoal tracking-[4px] uppercase leading-tight">
-              Maleka Morani
-            </span>
-            <span className="font-sans text-[10px] text-terracotta font-bold tracking-[6px] uppercase mt-1">
-              Mrs. Universe
-            </span>
-          </div>
-          <ul className="flex flex-col gap-3 font-avenir-medium text-[13px] md:text-[14px] tracking-wider text-charcoal/80">
+    <footer className="w-full bg-[#050505] text-white pt-16 pb-12 px-6 md:px-12 border-t border-white/10">
+      <div className="max-w-7xl mx-auto flex flex-col gap-12">
+        {/* Top Footer Row: Nav Links + Social Icons */}
+        <div className="flex flex-col md:flex-row items-center justify-between gap-8 pb-10 border-b border-white/10">
+          {/* Quick Nav Links */}
+          <ul className="flex items-center gap-6 sm:gap-8 flex-wrap justify-center md:justify-start">
             <li>
-              <a
-                href="https://www.instagram.com/maleka_morani/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-terracotta transition-colors"
-              >
-                Instagram
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-terracotta transition-colors"
-              >
-                LinkedIn
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://facebook.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-terracotta transition-colors"
-              >
-                Facebook
-              </a>
-            </li>
-            <li>
-              <a href="#newsletter" className="hover:text-terracotta transition-colors">
-                Newsletter Signup
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        {/* Column 2: Instagram Feed Sneak Peek */}
-        <div className="flex flex-col items-center text-center pb-8 md:pb-0 md:border-r border-[#efe7e2] pr-0 md:pr-12">
-          <div className="inline-block bg-[#efe7e2] px-6 py-2 mb-6">
-            <span className="font-avenir-medium text-[13px] uppercase tracking-[2px] text-charcoal">
-              Sneak peek of my feed
-            </span>
-          </div>
-          <a
-            href="https://www.instagram.com/maleka_morani/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="relative block w-full aspect-[3/2] max-w-[360px] overflow-hidden group shadow-sm"
-          >
-            <Image
-              src="/images/maleka-hero.png"
-              alt="Maleka Instagram Feed Preview"
-              fill
-              className="object-cover transition-transform duration-500 group-hover:scale-105"
-            />
-          </a>
-        </div>
-
-        {/* Column 3: Site Menu Links */}
-        <div className="flex flex-col items-center md:items-end text-center md:text-right">
-          <ul className="flex flex-col gap-4 font-avenir-medium text-[13px] md:text-[14px] tracking-wider text-charcoal/80">
-            <li>
-              <Link href="/" className="hover:text-terracotta transition-colors">
+              <Link href="/" className="text-[12px] font-medium tracking-[2px] text-gray-400 hover:text-white uppercase transition-colors">
                 Home
               </Link>
             </li>
             <li>
-              <Link href="#home-intro" className="hover:text-terracotta transition-colors">
-                Meet Maleka
+              <Link href="#about-story" className="text-[12px] font-medium tracking-[2px] text-gray-400 hover:text-white uppercase transition-colors">
+                About
               </Link>
             </li>
             <li>
-              <Link href="#services" className="hover:text-terracotta transition-colors">
-                Healthcare Mission
+              <Link href="#discography" className="text-[12px] font-medium tracking-[2px] text-gray-400 hover:text-white uppercase transition-colors">
+                Music
               </Link>
             </li>
             <li>
-              <Link href="#services" className="hover:text-terracotta transition-colors">
-                Advocacy & Causes
+              <Link href="#discography" className="text-[12px] font-medium tracking-[2px] text-gray-400 hover:text-white uppercase transition-colors">
+                Events
               </Link>
             </li>
             <li>
-              <Link href="#highlights" className="hover:text-terracotta transition-colors">
-                Family & Legacy
+              <Link href="#discography" className="text-[12px] font-medium tracking-[2px] text-gray-400 hover:text-white uppercase transition-colors">
+                Journal
               </Link>
             </li>
             <li>
-              <Link href="#newsletter" className="hover:text-terracotta transition-colors">
-                Get In Touch
+              <Link href="#newsletter" className="text-[12px] font-medium tracking-[2px] text-gray-400 hover:text-white uppercase transition-colors">
+                Contact
               </Link>
             </li>
           </ul>
-        </div>
-      </div>
 
-      {/* Credit Bar Section */}
-      <div className="w-full bg-[#efe7e2] py-12 px-6 md:px-12 border-t border-terracotta/20">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-          {/* Credits Text */}
-          <div className="text-center md:text-left font-avenir-medium text-[12px] md:text-[13px] tracking-wider text-charcoal/70 leading-[1.8]">
-            <p>Proudly created in South Africa:</p>
-            <p>
-              Design by{" "}
-              <a
-                href="http://chrystalace.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline hover:text-terracotta"
-              >
-                Chrystalace
-              </a>
-            </p>
-            <p>
-              Development by{" "}
-              <a
-                href="https://paperplanery.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline hover:text-terracotta"
-              >
-                Paper Planery
-              </a>
-            </p>
-            <p>
-              Managed by{" "}
-              <a
-                href="https://www.kairosdigital.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline hover:text-terracotta"
-              >
-                Kairos Digital
-              </a>
-            </p>
-            <p className="mt-4">© 2026 Maleka Morani</p>
-          </div>
-
-          {/* Centered Logo/Emblem (Mrs. Universe Crown Motif) */}
-          <div className="flex justify-center">
-            <div className="relative w-[100px] h-[176px]">
-              <Image
-                src="/images/DEMI-WEBSITE-DRAFT-1_updated-13.png"
-                alt="Mrs. Universe Crown Emblem"
-                fill
-                className="object-contain animate-pulse-slow"
-              />
-            </div>
-          </div>
-
-          {/* Social Icons Follow Bar */}
-          <div className="flex justify-center md:justify-end gap-4">
-            <a
-              href="https://www.instagram.com/maleka_morani/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-10 h-10 rounded-full border border-terracotta/40 bg-white/80 hover:bg-terracotta hover:border-terracotta flex items-center justify-center text-charcoal hover:text-white transition-colors duration-200"
-              title="Instagram"
-            >
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+          {/* Social Icons matching Svara HTML */}
+          <div className="flex items-center gap-4">
+            {/* Spotify */}
+            <a href="#" className="w-10 h-10 rounded-full border border-white/20 bg-white/5 hover:bg-white hover:text-black flex items-center justify-center transition-all">
+              <svg className="w-4 h-4 fill-current" viewBox="0 0 496 512">
+                <path d="M248 8C111.1 8 0 119.1 0 256s111.1 248 248 248 248-111.1 248-248S384.9 8 248 8zm100.7 364.9c-4.2 0-6.8-1.3-10.7-3.6-62.4-37.6-135-39.2-206.7-24.5-3.9 1-9 2.6-11.9 2.6-9.7 0-15.8-7.7-15.8-15.8 0-10.3 6.1-15.2 13.6-16.8 81.9-18.1 165.6-16.5 237 26.2 6.1 3.9 9.7 7.4 9.7 16.5s-7.1 15.4-15.2 15.4zm26.9-65.6c-5.2 0-8.7-2.3-12.3-4.2-62.5-37-155.7-51.9-238.6-29.4-4.8 1.3-7.4 2.6-11.9 2.6-10.7 0-19.4-8.7-19.4-19.4s5.2-17.8 15.5-20.7c27.8-7.8 56.2-13.6 97.8-13.6 64.9 0 127.6 16.1 177 45.5 8.1 4.8 11.3 11 11.3 19.7-.1 10.8-8.5 19.5-19.4 19.5zm31-76.2c-5.2 0-8.4-1.3-12.9-3.9-71.2-42.5-198.5-52.7-280.9-29.7-3.6 1-8.1 2.6-12.9 2.6-13.2 0-23.3-10.3-23.3-23.6 0-13.6 8.4-21.3 17.4-23.9 35.2-10.3 74.6-15.2 117.5-15.2 73 0 149.5 15.2 205.4 47.8 7.8 4.5 12.9 10.7 12.9 22.6 0 13.6-11 23.3-23.2 23.3z" />
               </svg>
             </a>
-            <a
-              href="https://www.linkedin.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-10 h-10 rounded-full border border-terracotta/40 bg-white/80 hover:bg-terracotta hover:border-terracotta flex items-center justify-center text-charcoal hover:text-white transition-colors duration-200"
-              title="LinkedIn"
-            >
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+
+            {/* iTunes */}
+            <a href="#" className="w-10 h-10 rounded-full border border-white/20 bg-white/5 hover:bg-white hover:text-black flex items-center justify-center transition-all">
+              <svg className="w-4 h-4 fill-current" viewBox="0 0 448 512">
+                <path d="M223.6 80.3C129 80.3 52.5 157 52.5 251.5S129 422.8 223.6 422.8s171.2-76.7 171.2-171.2c0-94.6-76.7-171.3-171.2-171.3zm79.4 240c-3.2 13.6-13.5 21.2-27.3 23.8-12.1 2.2-22.2 2.8-31.9-5-11.8-10-12-26.4-1.4-36.8 8.4-8 20.3-9.6 38-12.8 3-.5 5.6-1.2 7.7-3.7 3.2-3.6 2.2-2 2.2-80.8 0-5.6-2.7-7.1-8.4-6.1-4 .7-91.9 17.1-91.9 17.1-5 1.1-6.7 2.6-6.7 8.3 0 116.1.5 110.8-1.2 118.5-2.1 9-7.6 15.8-14.9 19.6-8.3 4.6-23.4 6.6-31.4 5.2-21.4-4-28.9-28.7-14.4-42.9 8.4-8 20.3-9.6 38-12.8 3-.5 5.6-1.2 7.7-3.7 5-5.7.9-127 2.6-133.7.4-2.6 1.5-4.8 3.5-6.4 2.1-1.7 5.8-2.7 6.7-2.7 101-19 113.3-21.4 115.1-21.4 5.7-.4 9 3 9 8.7-.1 170.6.4 161.4-1 167.6zM345.2 32H102.8C45.9 32 0 77.9 0 134.8v242.4C0 434.1 45.9 480 102.8 480h242.4c57 0 102.8-45.9 102.8-102.8V134.8C448 77.9 402.1 32 345.2 32zM223.6 444c-106.3 0-192.5-86.2-192.5-192.5S117.3 59 223.6 59s192.5 86.2 192.5 192.5S329.9 444 223.6 444z" />
               </svg>
             </a>
-            <a
-              href="https://facebook.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-10 h-10 rounded-full border border-terracotta/40 bg-white/80 hover:bg-terracotta hover:border-terracotta flex items-center justify-center text-charcoal hover:text-white transition-colors duration-200"
-              title="Facebook"
-            >
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+
+            {/* YouTube */}
+            <a href="#" className="w-10 h-10 rounded-full border border-white/20 bg-white/5 hover:bg-white hover:text-black flex items-center justify-center transition-all">
+              <svg className="w-4 h-4 fill-current" viewBox="0 0 576 512">
+                <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.206-142.739 81.20connector" />
               </svg>
             </a>
           </div>
         </div>
-      </div>
 
-      {/* Header top border line scaled at the bottom of the footer */}
-      <div className="w-full relative h-[10px] md:h-[12px] overflow-hidden">
-        <Image
-          src="/images/demi-tebow-header-line-scaled.jpg"
-          alt="terracotta line"
-          fill
-          className="object-cover w-full h-full"
-        />
+        {/* Bottom Credits & Giant Watermark */}
+        <div className="flex flex-col md:flex-row items-center justify-between gap-6 pt-4 text-center md:text-left">
+          <div className="flex flex-col gap-1">
+            <span className="text-[13px] font-semibold text-gray-300">
+              Musician &amp; Singer Elementor Template Kit by Omispace
+            </span>
+            <span className="text-[12px] text-gray-500">
+              Copyright © 2026. All rights reserved.
+            </span>
+          </div>
+
+          <div className="font-bricolage text-[28px] sm:text-[36px] font-bold text-white/40 tracking-[6px] uppercase">
+            MALEKA MORANI
+          </div>
+        </div>
       </div>
     </footer>
   );

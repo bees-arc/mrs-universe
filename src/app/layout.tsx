@@ -2,8 +2,8 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Home - Demi-Leigh Tebow",
-  description: "It’s an honor to “meet” you. This website is a place dedicated to encouraging, inspiring and speaking life into anyone who visits. My hope is that through sharing my heart, passion and latest projects, you can find your own inspiration as well!",
+  title: "Maleka Morani - Musician & Singer | Mrs. Universe 2026",
+  description: "Official website for Maleka Morani - Mrs. Universe 2026, registered nurse, advocate, and musician creating music for the in-between.",
 };
 
 export const viewport: Viewport = {
@@ -13,10 +13,14 @@ export const viewport: Viewport = {
   userScalable: false,
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html lang="en" className="h-full antialiased">
-      <body className="min-h-full flex flex-col font-sans text-charcoal bg-white">
+    <html lang="en" className="h-full antialiased dark">
+      <body className="min-h-full flex flex-col font-sans text-gray-100 bg-[#0a0a0a]">
         {children}
       </body>
     </html>
