@@ -14,7 +14,7 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div className="w-full min-h-screen bg-[#0a0a0a] text-white flex flex-col overflow-x-hidden">
+    <div className="w-full min-h-screen bg-black text-white flex flex-col overflow-x-hidden">
       {/* 1. Header Navigation */}
       <Navbar />
 
@@ -28,8 +28,13 @@ export default function Home() {
         {/* 4. About Section matching Frame 1 */}
         <AboutSection />
 
-        {/* 5. Quote Banner Callout matching Svara HTML */}
-        <section className="w-full bg-[#0a0a0a] py-20 px-6 md:px-12 border-t border-white/10 text-center">
+        {/* 5. Deep Ocean Blue Ambient Transition Section matching Frame 1 bottom fold */}
+        <section className="w-full h-32 sm:h-48 bg-gradient-to-b from-black via-[#0f2b48]/80 to-black border-t border-white/10 relative overflow-hidden flex items-center justify-center">
+          <div className="absolute inset-0 bg-blue-950/30 blur-3xl pointer-events-none" />
+        </section>
+
+        {/* 6. Quote Banner Callout matching Svara HTML */}
+        <section className="w-full bg-black py-20 px-6 md:px-12 border-t border-white/10 text-center">
           <div className="max-w-4xl mx-auto flex flex-col items-center gap-8">
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -43,23 +48,23 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 6. Discography Section */}
+        {/* 7. Discography Section */}
         <DiscographySection />
 
-        {/* 7. Upcoming Shows Section */}
+        {/* 8. Upcoming Shows Section */}
         <UpcomingShowsSection />
 
-        {/* 8. Live Performance Section */}
+        {/* 9. Live Performance Section */}
         <LivePerformanceSection />
 
-        {/* 9. Journal Section */}
+        {/* 10. Journal Section */}
         <JournalSection />
 
-        {/* 10. Newsletter Form */}
+        {/* 11. Newsletter Form */}
         <NewsletterForm />
       </main>
 
-      {/* 11. Footer */}
+      {/* 12. Footer */}
       <Footer />
     </div>
   );
