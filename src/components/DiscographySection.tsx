@@ -2,52 +2,14 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-
-interface Track {
-  id: string;
-  title: string;
-  duration: string;
-  tags: string[];
-  image: string;
-}
-
-const tracks: Track[] = [
-  {
-    id: "1",
-    title: "Midnight Air",
-    duration: "3:46",
-    tags: ["Indie", "Ambient", "Alternative"],
-    image: "/images/drive/drive_image_10_1PTm409zqdRN7le74s7uKnLMt5hbelbCi.jpg",
-  },
-  {
-    id: "2",
-    title: "Before the Light",
-    duration: "4:02",
-    tags: ["Indie", "Acoustic", "Ambient"],
-    image: "/images/drive/drive_image_11_14C-nzXMu7GLJonG1TfQsECsK46kdS72t.jpg",
-  },
-  {
-    id: "3",
-    title: "Fading Lines",
-    duration: "3:58",
-    tags: ["Indie", "Alternative", "Dream Pop"],
-    image: "/images/drive/drive_image_12_176R7jt93i6nAwWYvmq50qlGiNvt0H4UC.jpg",
-  },
-  {
-    id: "4",
-    title: "Where Silence Stays",
-    duration: "4:15",
-    tags: ["Indie", "Ambient", "Experimental"],
-    image: "/images/drive/drive_image_13_1TJZK6ce9uSoa163jhUIZ6uMwwOZ0vYm0.jpg",
-  },
-];
+import { musicTracks } from "@/data/contentData";
 
 export default function DiscographySection() {
   return (
     <section id="discography" className="w-full bg-[#0a0a0a] py-20 px-6 md:px-12 border-t border-white/10 text-white">
       <div className="max-w-7xl mx-auto flex flex-col gap-12">
         {/* Section Title */}
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 border-b border-white/10 pb-4">
           <h2 className="font-onest text-[36px] sm:text-[48px] font-extrabold tracking-tight uppercase">
             Discography
           </h2>
@@ -58,7 +20,7 @@ export default function DiscographySection() {
 
         {/* Track Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {tracks.map((track, idx) => (
+          {musicTracks.map((track, idx) => (
             <motion.div
               key={track.id}
               initial={{ opacity: 0, y: 30 }}

@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 export default function FeaturedTrackSection() {
@@ -53,6 +54,13 @@ export default function FeaturedTrackSection() {
             <p className="text-[14px] sm:text-[15px] text-white font-light leading-[1.65] tracking-wide drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
               A drifting piece carried by quiet thoughts and distant memories, echoing softly in the spaces in between.
             </p>
+
+            <Link
+              href="/support"
+              className="mt-2 px-6 py-2.5 rounded-full bg-white text-black font-semibold text-[11px] tracking-[1.5px] uppercase hover:bg-gray-200 transition-all shadow-lg"
+            >
+              SUPPORT THE JOURNEY &rarr;
+            </Link>
           </div>
         </motion.div>
       </div>

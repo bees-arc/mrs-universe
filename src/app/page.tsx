@@ -5,7 +5,6 @@ import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import FeaturedTrackSection from "@/components/FeaturedTrackSection";
 import AboutSection from "@/components/AboutSection";
-import DiscographySection from "@/components/DiscographySection";
 import UpcomingShowsSection from "@/components/UpcomingShowsSection";
 import LivePerformanceSection from "@/components/LivePerformanceSection";
 import JournalSection from "@/components/JournalSection";
@@ -41,30 +40,27 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="font-bricolage text-[22px] sm:text-[32px] md:text-[38px] font-bold text-gray-200 uppercase tracking-tight leading-[1.3]"
+              className="font-onest text-[22px] sm:text-[32px] md:text-[38px] font-bold text-gray-200 uppercase tracking-tight leading-[1.3]"
             >
               This is not just music. It’s a space to feel, to pause, and to listen beyond the noise.
             </motion.p>
           </div>
         </section>
 
-        {/* 7. Discography Section */}
-        <DiscographySection />
-
-        {/* 8. Upcoming Shows Section */}
+        {/* 7. Upcoming Shows Section */}
         <UpcomingShowsSection />
 
-        {/* 9. Live Performance Section */}
+        {/* 8. Live Performance Section */}
         <LivePerformanceSection />
 
-        {/* 10. Journal Section */}
+        {/* 9. Journal Section */}
         <JournalSection />
 
-        {/* 11. Newsletter Form */}
+        {/* 10. Newsletter Form */}
         <NewsletterForm />
       </main>
 
-      {/* 12. Footer */}
+      {/* 11. Footer */}
       <Footer />
     </div>
   );

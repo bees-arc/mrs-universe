@@ -4,134 +4,91 @@ import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-interface NavItem {
-  label: string;
-  href: string;
-}
-
-const navItems: NavItem[] = [
-  { label: "HOME", href: "/" },
-  { label: "MY STORY", href: "/story" },
-  { label: "MY MISSION", href: "/mission" },
-  { label: "GALLERY", href: "/gallery" },
-  { label: "SUPPORT MY JOURNEY", href: "/support" },
-];
-
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
 
+  const navLinks = [
+    { name: "HOME", href: "/" },
+    { name: "MY STORY", href: "/story" },
+    { name: "MY MISSION", href: "/mission" },
+    { name: "GALLERY", href: "/gallery" },
+    { name: "JOURNAL", href: "/journal" },
+    { name: "SUPPORT", href: "/support" },
+  ];
+
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[#0a0a0a]/90 backdrop-blur-md border-b border-white/10 transition-all duration-300">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-black/85 backdrop-blur-md border-b border-white/10 text-white">
       <div className="max-w-7xl mx-auto px-6 md:px-12 h-20 flex items-center justify-between">
-        {/* Brand Logo - Crown + MM MALEKA MORANI */}
-        <Link href="/" className="flex items-center gap-3 group">
-          <div className="w-8 h-8 flex items-center justify-center text-white transition-transform group-hover:scale-105">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="w-7 h-7 text-white"
-            >
-              <path d="M2 4l3 12h14l3-12-6 7-4-7-4 7-6-7z" fill="currentColor" fillOpacity="0.2" />
-              <path d="M2 4l3 12h14l3-12-6 7-4-7-4 7-6-7z" />
-              <path d="M5 20h14" strokeWidth="2" />
-            </svg>
-          </div>
-          <div className="flex flex-col">
-            <span className="font-monda text-[16px] md:text-[18px] font-bold tracking-[3px] text-white uppercase leading-none">
-              MALEKA MORANI
-            </span>
-            <span className="text-[9px] tracking-[4px] text-gray-400 font-medium uppercase mt-0.5">
-              MRS. UNIVERSE 2026
-            </span>
-          </div>
+        {/* Brand Header Title */}
+        <Link href="/" className="flex flex-col group">
+          <span className="font-monda text-[20px] font-bold tracking-[4px] uppercase text-white group-hover:text-sky-400 transition-colors">
+            MALEKA MORANI
+          </span>
+          <span className="text-[9px] font-mono tracking-[2.5px] uppercase text-gray-400 -mt-1">
+            MRS. UNIVERSE 2026
+          </span>
         </Link>
 
-        {/* Desktop Menu */}
-        <nav className="hidden lg:flex items-center gap-8 xl:gap-10">
-          {navItems.map((item) => {
-            const isActive = pathname === item.href;
+        {/* Desktop Navigation Links */}
+        <nav className="hidden lg:flex items-center gap-7">
+          {navLinks.map((link) => {
+            const isActive = pathname === link.href;
             return (
               <Link
-                key={item.label}
-                href={item.href}
-                className={`text-[12px] font-medium tracking-[2px] uppercase py-1 relative group transition-colors ${
-                  isActive ? "text-white font-bold" : "text-gray-300 hover:text-white"
+                key={link.name}
+                href={link.href}
+                className={`text-[11px] font-semibold tracking-[2px] uppercase transition-colors hover:text-sky-400 ${
+                  isActive ? "text-sky-400 font-bold border-b border-sky-400 pb-0.5" : "text-gray-300"
                 }`}
               >
-                {item.label}
-                <span
-                  className={`absolute bottom-0 left-0 h-[1.5px] bg-white transition-all duration-300 ${
-                    isActive ? "w-full" : "w-0 group-hover:w-full"
-                  }`}
-                />
+                {link.name}
               </Link>
             );
           })}
-        </nav>
 
-        {/* Action Button: CONTACT */}
-        <div className="hidden lg:flex items-center">
+          {/* Contact Pill Action Button */}
           <Link
             href="/contact"
-            className="px-7 py-2.5 rounded-full border border-white/40 text-white text-[12px] font-medium tracking-[2px] uppercase hover:bg-white hover:text-black transition-all duration-300 shadow-sm"
+            className="px-6 py-2.5 rounded-full border border-white/30 bg-white/5 hover:bg-white hover:text-black font-semibold text-[11px] tracking-[2px] uppercase transition-all shadow-md ml-2"
           >
             CONTACT
           </Link>
-        </div>
+        </nav>
 
-        {/* Mobile Menu Button */}
+        {/* Mobile Hamburger Toggle Button */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="lg:hidden text-white p-2 focus:outline-none"
-          aria-label="Toggle navigation menu"
+          className="lg:hidden p-2 text-gray-300 hover:text-white focus:outline-none"
+          aria-label="Toggle Navigation Menu"
         >
-          <svg
-            className="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
+          <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
             {mobileMenuOpen ? (
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M6 18L18 6M6 6l12 12"
-              />
+              <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
             ) : (
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
+              <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
             )}
           </svg>
         </button>
       </div>
 
-      {/* Mobile Menu Drawer */}
+      {/* Mobile Drawer Navigation */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-[#0a0a0a] border-b border-white/10 px-6 py-6 flex flex-col gap-5 animate-fadeIn">
-          {navItems.map((item) => (
+        <div className="lg:hidden bg-black/95 border-b border-white/10 px-6 py-6 flex flex-col gap-4 shadow-2xl">
+          {navLinks.map((link) => (
             <Link
-              key={item.label}
-              href={item.href}
+              key={link.name}
+              href={link.href}
               onClick={() => setMobileMenuOpen(false)}
-              className="text-[13px] font-medium tracking-[2px] text-gray-300 hover:text-white uppercase py-1"
+              className="text-[12px] font-semibold tracking-[2px] uppercase text-gray-300 hover:text-sky-400 transition-colors py-1"
             >
-              {item.label}
+              {link.name}
             </Link>
           ))}
           <Link
             href="/contact"
             onClick={() => setMobileMenuOpen(false)}
-            className="mt-2 inline-block text-center px-6 py-2.5 rounded-full border border-white/40 text-white text-[12px] font-medium tracking-[2px] uppercase hover:bg-white hover:text-black transition-all"
+            className="px-6 py-3 rounded-full bg-white text-black font-semibold text-[11px] tracking-[2px] uppercase text-center mt-2 shadow-md"
           >
             CONTACT
           </Link>
