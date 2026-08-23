@@ -47,21 +47,22 @@ export default function UpcomingShowsSection() {
   return (
     <section className="w-full bg-[#0a0a0a] py-20 px-6 md:px-12 border-t border-white/10 text-white">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-        {/* Left Column: Image */}
+        {/* Left Column: Image with face clearly visible */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
-          className="lg:col-span-5 relative w-full aspect-[6/5] rounded-3xl overflow-hidden border border-white/15 shadow-2xl"
+          className="lg:col-span-5 relative w-full aspect-[4/5] rounded-3xl overflow-hidden border border-white/15 shadow-2xl bg-black/40"
         >
           <Image
-            src="/images/maleka-crowning.png"
+            src="/images/drive/drive_image_31_10QPB8iIgOsgmoxzQDDfC1hlp0VyXlF02.jpg"
             alt="Upcoming Shows - Maleka Morani"
             fill
-            className="object-cover"
+            sizes="(max-width: 1024px) 100vw, 40vw"
+            className="object-cover object-top"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
         </motion.div>
 
         {/* Right Column: Events List */}
@@ -74,10 +75,10 @@ export default function UpcomingShowsSection() {
         >
           {/* Header */}
           <div className="flex flex-col gap-2">
-            <h2 className="font-bricolage text-[36px] sm:text-[44px] font-extrabold tracking-tight uppercase">
+            <h2 className="font-onest text-[36px] sm:text-[44px] font-extrabold tracking-tight uppercase">
               Upcoming Shows
             </h2>
-            <p className="text-[14px] font-light text-blue-400 tracking-wide uppercase">
+            <p className="text-[14px] font-light text-sky-400 tracking-wide uppercase">
               See You Somewhere in Between.
             </p>
           </div>
@@ -91,7 +92,7 @@ export default function UpcomingShowsSection() {
               >
                 {/* Date Badge */}
                 <div className="flex flex-col items-center justify-center bg-white/10 border border-white/15 rounded-xl w-14 h-14 flex-shrink-0 text-center">
-                  <span className="font-bricolage text-[16px] font-bold leading-none text-white">
+                  <span className="font-onest text-[16px] font-bold leading-none text-white">
                     {evt.date}
                   </span>
                   <span className="text-[9px] font-mono text-gray-400 mt-0.5">
@@ -101,7 +102,7 @@ export default function UpcomingShowsSection() {
 
                 {/* Event Details */}
                 <div className="flex flex-col flex-grow">
-                  <h4 className="font-bricolage text-[18px] font-bold text-white group-hover:text-blue-400 transition-colors">
+                  <h4 className="font-onest text-[18px] font-bold text-white group-hover:text-sky-400 transition-colors">
                     {evt.title}
                   </h4>
                   <span className="text-[12px] text-gray-400 tracking-wider uppercase">
@@ -112,7 +113,7 @@ export default function UpcomingShowsSection() {
                 {/* Arrow Action */}
                 <Link
                   href={evt.href}
-                  className="flex items-center gap-2 text-[12px] font-medium tracking-[1.5px] uppercase text-white hover:text-blue-400 transition-colors"
+                  className="flex items-center gap-2 text-[12px] font-medium tracking-[1.5px] uppercase text-white hover:text-sky-400 transition-colors"
                 >
                   <span className="hidden sm:inline">Get Tickets</span>
                   <svg

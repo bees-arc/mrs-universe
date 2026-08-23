@@ -18,7 +18,7 @@ const causes: Cause[] = [
     title: "Domestic Violence Advocacy",
     category: "SAFETY & HEALING",
     description: "Witnessing the physical and emotional impact firsthand in healthcare, I champion education, active awareness, and robust resources to help victims find safety, healing, and hope.",
-    image: "/images/maleka-crowning.png",
+    image: "/images/drive/drive_image_32_1HYvhsEsCV6dkUPvsNiv-oPdOmKzDoOwu.jpg",
   },
   {
     title: "Holistic Healthcare",
@@ -30,7 +30,7 @@ const causes: Cause[] = [
     title: "Mental Health & Youth Development",
     category: "CONFIDENCE & WELL-BEING",
     description: "Helping young people build confidence, resilience, and self-worth. Encouraging the next generation to prioritize mental well-being and understand that asking for help is a sign of strength.",
-    image: "/images/maleka-hero.png",
+    image: "/images/figma_hero_exact.png",
   },
   {
     title: "Cancer Awareness & Early Screening",
@@ -51,7 +51,7 @@ export default function MissionPage() {
           <span className="text-[11px] font-bold tracking-[3px] uppercase text-sky-400">
             MY MISSION &amp; ADVOCACY
           </span>
-          <h1 className="font-bricolage text-[40px] sm:text-[60px] md:text-[72px] font-extrabold tracking-tight uppercase leading-none">
+          <h1 className="font-onest text-[40px] sm:text-[60px] md:text-[72px] font-extrabold tracking-tight uppercase leading-none">
             Empowering Lives &amp; Inspiring Hope
           </h1>
           <p className="max-w-2xl text-[16px] text-gray-300 font-light leading-relaxed">
@@ -70,21 +70,23 @@ export default function MissionPage() {
               transition={{ duration: 0.6, delay: idx * 0.1 }}
               className="bg-white/5 border border-white/15 rounded-3xl p-6 sm:p-8 flex flex-col gap-6 shadow-2xl backdrop-blur-xl group hover:border-white/30 transition-all"
             >
-              <div className="relative w-full aspect-[16/10] rounded-2xl overflow-hidden">
+              {/* Aspect 4/3 with object-top alignment to ensure face is 100% visible */}
+              <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-black/40">
                 <Image
                   src={cause.image}
                   alt={cause.title}
                   fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-black/20" />
+                <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-300" />
               </div>
 
               <div className="flex flex-col gap-2">
                 <span className="text-[10px] font-mono tracking-[2.5px] uppercase text-sky-400">
                   {cause.category}
                 </span>
-                <h3 className="font-bricolage text-[22px] font-bold text-white leading-snug">
+                <h3 className="font-onest text-[22px] font-bold text-white leading-snug">
                   {cause.title}
                 </h3>
                 <p className="text-[14px] text-gray-300 font-light leading-relaxed mt-1">
@@ -97,7 +99,7 @@ export default function MissionPage() {
 
         {/* Call to Action */}
         <div className="bg-gradient-to-r from-blue-950/40 via-black to-purple-950/40 border border-white/15 rounded-3xl p-10 text-center flex flex-col items-center gap-6">
-          <h2 className="font-bricolage text-[28px] sm:text-[36px] font-bold uppercase tracking-tight">
+          <h2 className="font-onest text-[28px] sm:text-[36px] font-bold uppercase tracking-tight">
             Join the Movement for Change
           </h2>
           <p className="max-w-xl text-[14px] text-gray-300 font-light leading-relaxed">

@@ -1,5 +1,26 @@
 import type { Metadata, Viewport } from "next";
+import { Onest, Bricolage_Grotesque, Monda } from "next/font/google";
 import "./globals.css";
+
+const onest = Onest({
+  subsets: ["latin"],
+  variable: "--font-onest",
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+});
+
+const bricolage = Bricolage_Grotesque({
+  subsets: ["latin"],
+  variable: "--font-bricolage",
+  display: "swap",
+});
+
+const monda = Monda({
+  subsets: ["latin"],
+  variable: "--font-monda",
+  weight: ["400", "700"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Maleka Morani - Musician & Singer | Mrs. Universe 2026",
@@ -19,8 +40,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="h-full antialiased dark">
-      <body className="min-h-full flex flex-col font-sans text-gray-100 bg-[#0a0a0a]">
+    <html lang="en" className={`${onest.variable} ${bricolage.variable} ${monda.variable} h-full antialiased dark`}>
+      <body suppressHydrationWarning className={`${onest.className} min-h-full flex flex-col font-sans text-gray-100 bg-[#0a0a0a]`}>
         {children}
       </body>
     </html>

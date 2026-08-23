@@ -17,7 +17,7 @@ export default function SupportPage() {
           <span className="text-[11px] font-bold tracking-[3px] uppercase text-sky-400">
             SUPPORT MY JOURNEY
           </span>
-          <h1 className="font-bricolage text-[40px] sm:text-[60px] md:text-[72px] font-extrabold tracking-tight uppercase leading-none">
+          <h1 className="font-onest text-[40px] sm:text-[60px] md:text-[72px] font-extrabold tracking-tight uppercase leading-none">
             Be Part of The Journey
           </h1>
           <p className="max-w-2xl text-[16px] text-gray-300 font-light leading-relaxed">
@@ -32,17 +32,27 @@ export default function SupportPage() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
-            className="lg:col-span-5 bg-white/5 border border-white/20 rounded-3xl p-8 sm:p-12 shadow-2xl flex flex-col items-center text-center gap-6 backdrop-blur-xl"
+            className="lg:col-span-5 bg-white/5 border border-white/20 rounded-3xl p-8 sm:p-12 shadow-2xl flex flex-col items-center text-center gap-6 backdrop-blur-xl relative overflow-hidden group"
           >
-            <span className="text-[11px] font-bold tracking-[3px] uppercase text-sky-400">
+            <div className="absolute inset-0 z-0 opacity-15 group-hover:opacity-25 transition-opacity">
+              <Image
+                src="/images/drive/drive_image_19_16peaTzLEUWxFPnTHVsU4_2D84id_x5wa.jpg"
+                alt="Support Background"
+                fill
+                sizes="(max-width: 1024px) 100vw, 40vw"
+                className="object-cover"
+              />
+            </div>
+
+            <span className="relative z-10 text-[11px] font-bold tracking-[3px] uppercase text-sky-400">
               SCAN TO SUPPORT
             </span>
-            <h2 className="font-bricolage text-[28px] font-bold text-white uppercase">
+            <h2 className="relative z-10 font-onest text-[28px] font-bold text-white uppercase">
               Make The Crown Possible
             </h2>
 
             {/* Large High-Contrast Vector QR Code */}
-            <div className="w-48 h-48 sm:w-56 sm:h-56 bg-white p-4 rounded-2xl border border-white/40 shadow-xl flex items-center justify-center my-2">
+            <div className="relative z-10 w-48 h-48 sm:w-56 sm:h-56 bg-white p-4 rounded-2xl border border-white/40 shadow-xl flex items-center justify-center my-2">
               <svg
                 viewBox="0 0 29 29"
                 fill="none"
@@ -108,7 +118,7 @@ export default function SupportPage() {
               </svg>
             </div>
 
-            <p className="text-[13px] text-gray-300 font-light max-w-xs">
+            <p className="relative z-10 text-[13px] text-gray-300 font-light max-w-xs">
               Scan this code with your phone camera to access official support links and sponsorship options.
             </p>
           </motion.div>
@@ -120,12 +130,12 @@ export default function SupportPage() {
             transition={{ duration: 0.8 }}
             className="lg:col-span-7 flex flex-col gap-6"
           >
-            <h2 className="font-bricolage text-[28px] sm:text-[36px] font-bold text-white leading-snug">
+            <h2 className="font-onest text-[28px] sm:text-[36px] font-bold text-white leading-snug">
               Ways You Can Support
             </h2>
             <div className="flex flex-col gap-4 text-[14px] text-gray-300 font-light leading-relaxed">
               <div className="bg-white/5 border border-white/10 p-5 rounded-2xl">
-                <h4 className="font-bricolage text-[16px] font-bold text-white">
+                <h4 className="font-onest text-[16px] font-bold text-white">
                   1. Official Sponsorship
                 </h4>
                 <p className="mt-1 text-gray-300">
@@ -134,7 +144,7 @@ export default function SupportPage() {
               </div>
 
               <div className="bg-white/5 border border-white/10 p-5 rounded-2xl">
-                <h4 className="font-bricolage text-[16px] font-bold text-white">
+                <h4 className="font-onest text-[16px] font-bold text-white">
                   2. Advocacy Contributions
                 </h4>
                 <p className="mt-1 text-gray-300">
@@ -143,7 +153,7 @@ export default function SupportPage() {
               </div>
 
               <div className="bg-white/5 border border-white/10 p-5 rounded-2xl">
-                <h4 className="font-bricolage text-[16px] font-bold text-white">
+                <h4 className="font-onest text-[16px] font-bold text-white">
                   3. Share the Story
                 </h4>
                 <p className="mt-1 text-gray-300">

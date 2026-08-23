@@ -42,7 +42,7 @@ export default function Navbar() {
             </svg>
           </div>
           <div className="flex flex-col">
-            <span className="font-bricolage text-[16px] md:text-[18px] font-bold tracking-[3px] text-white uppercase leading-none">
+            <span className="font-monda text-[16px] md:text-[18px] font-bold tracking-[3px] text-white uppercase leading-none">
               MALEKA MORANI
             </span>
             <span className="text-[9px] tracking-[4px] text-gray-400 font-medium uppercase mt-0.5">

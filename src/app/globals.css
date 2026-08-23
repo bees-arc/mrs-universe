@@ -1,35 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Onest:wght@100..900&display=swap');
 @import "tailwindcss";
 
-@font-face {
-  font-family: "Aire";
-  font-display: swap;
-  src: url("/fonts/AireBoldPro.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Avenir-Light";
-  font-display: swap;
-  src: url("/fonts/Avenir-Light-07.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Avenir-Medium";
-  font-display: swap;
-  src: url("/fonts/Avenir-Medium-09.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Avenir Bold";
-  font-display: swap;
-  src: url("/fonts/AvenirNextLTPro-Bold.otf") format("opentype");
-}
-
 @theme {
-  --font-serif: "Bricolage Grotesque", "Aire", Georgia, serif;
-  --font-sans: "Onest", "Avenir-Light", sans-serif;
-  --font-bricolage: "Bricolage Grotesque", sans-serif;
-  --font-onest: "Onest", sans-serif;
+  --font-sans: var(--font-onest), "Onest", system-ui, sans-serif;
+  --font-serif: var(--font-bricolage), "Bricolage Grotesque", Georgia, serif;
+  --font-bricolage: var(--font-bricolage), "Bricolage Grotesque", sans-serif;
+  --font-onest: var(--font-onest), "Onest", sans-serif;
+  --font-monda: var(--font-monda), "Monda", sans-serif;
   --font-avenir-medium: "Avenir-Medium", sans-serif;
   --font-avenir-bold: "Avenir Bold", sans-serif;
   

@@ -17,7 +17,7 @@ export default function StoryPage() {
           <span className="text-[11px] font-bold tracking-[3px] uppercase text-sky-400">
             MY STORY &amp; JOURNEY
           </span>
-          <h1 className="font-bricolage text-[40px] sm:text-[60px] md:text-[72px] font-extrabold tracking-tight uppercase leading-none">
+          <h1 className="font-onest text-[40px] sm:text-[60px] md:text-[72px] font-extrabold tracking-tight uppercase leading-none">
             Resilience, Service &amp; Purpose
           </h1>
           <p className="max-w-2xl text-[16px] text-gray-300 font-light leading-relaxed">
@@ -35,11 +35,12 @@ export default function StoryPage() {
             className="lg:col-span-5 relative w-full aspect-[4/5] rounded-3xl overflow-hidden border border-white/20 shadow-2xl"
           >
             <Image
-              src="/images/maleka-hero.png"
+              src="/images/drive/drive_image_32_1HYvhsEsCV6dkUPvsNiv-oPdOmKzDoOwu.jpg"
               alt="Maleka Morani - My Story"
               fill
               priority
-              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 40vw"
+              className="object-cover object-top"
             />
           </motion.div>
 
@@ -50,7 +51,7 @@ export default function StoryPage() {
             transition={{ duration: 0.8 }}
             className="lg:col-span-7 flex flex-col gap-6"
           >
-            <h2 className="font-bricolage text-[28px] sm:text-[36px] font-bold text-white leading-snug">
+            <h2 className="font-onest text-[28px] sm:text-[36px] font-bold text-white leading-snug">
               From ICU Care to the Global Stage of Mrs. Universe
             </h2>
             <div className="flex flex-col gap-5 text-[15px] text-gray-300 font-light leading-[1.8]">
@@ -65,7 +66,7 @@ export default function StoryPage() {
               </p>
             </div>
 
-            <div className="mt-4 flex gap-4">
+            <div className="mt-4 flex flex-wrap gap-4">
               <Link
                 href="/mission"
                 className="px-8 py-3.5 rounded-full bg-white text-black font-semibold text-[12px] tracking-[2px] uppercase hover:bg-gray-200 transition-all shadow-md"
