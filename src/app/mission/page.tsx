@@ -5,40 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-
-interface Cause {
-  title: string;
-  category: string;
-  description: string;
-  image: string;
-}
-
-const causes: Cause[] = [
-  {
-    title: "Domestic Violence Advocacy",
-    category: "SAFETY & HEALING",
-    description: "Witnessing the physical and emotional impact firsthand in healthcare, I champion education, active awareness, and robust resources to help victims find safety, healing, and hope.",
-    image: "/images/drive/drive_image_33_1E-wbN1tlYlVzwQx5U7JeYAOQ3IRFVpTB.jpg",
-  },
-  {
-    title: "Holistic Healthcare",
-    category: "MIND, BODY & SPIRIT",
-    description: "Over 15 years caring for patients in ICU, ER, aesthetics, and mental health. Dedicated to compassionate care that treats the whole person, not just a clinical diagnosis.",
-    image: "/images/drive/drive_image_20_1inAr1DSxtCqLQ0RjiKXFkMm_yhadwt-s.jpg",
-  },
-  {
-    title: "Mental Health & Youth Development",
-    category: "CONFIDENCE & WELL-BEING",
-    description: "Helping young people build confidence, resilience, and self-worth. Encouraging the next generation to prioritize mental well-being and understand that asking for help is a sign of strength.",
-    image: "/images/drive/drive_image_48_10lQwO0LJa4up8M98rZGjdfvRUEJB8WKU.jpg",
-  },
-  {
-    title: "Cancer Awareness & Early Screening",
-    category: "SURVIVORSHIP & HOPE",
-    description: "As a cancer survivor myself, I promote early detection, screening, and strong emotional support. I hope my journey shows others that cancer does not have to define your future.",
-    image: "/images/drive/drive_image_49_1ZwkMnJoj4UO9yzov2y9O4sd-_wFTE7du.jpg",
-  },
-];
+import { missionCauses } from "@/data/contentData";
 
 export default function MissionPage() {
   return (
@@ -61,38 +28,47 @@ export default function MissionPage() {
 
         {/* Causes Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          {causes.map((cause, idx) => (
+          {missionCauses.map((cause, idx) => (
             <motion.div
               key={cause.title}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, delay: idx * 0.1 }}
-              className="bg-white/5 border border-white/15 rounded-3xl p-6 sm:p-8 flex flex-col gap-6 shadow-2xl backdrop-blur-xl group hover:border-white/30 transition-all"
+              className="bg-white/5 border border-white/15 rounded-3xl p-6 sm:p-8 flex flex-col gap-6 shadow-2xl backdrop-blur-xl group hover:border-white/30 transition-all cursor-pointer justify-between"
             >
-              {/* Aspect 4/3 with object-top alignment to ensure face is 100% visible */}
-              <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-black/40">
-                <Image
-                  src={cause.image}
-                  alt={cause.title}
-                  fill
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-300" />
-              </div>
+              <Link href={`/mission/${cause.slug}`} className="flex flex-col gap-6 h-full justify-between">
+                <div className="flex flex-col gap-6">
+                  {/* Aspect 4/3 with object-top alignment to ensure face is 100% visible */}
+                  <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-black/40">
+                    <Image
+                      src={cause.image}
+                      alt={cause.title}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-300" />
+                  </div>
 
-              <div className="flex flex-col gap-2">
-                <span className="text-[10px] font-mono tracking-[2.5px] uppercase text-sky-400">
-                  {cause.category}
-                </span>
-                <h3 className="font-onest text-[22px] font-bold text-white leading-snug">
-                  {cause.title}
-                </h3>
-                <p className="text-[14px] text-gray-300 font-light leading-relaxed mt-1">
-                  {cause.description}
-                </p>
-              </div>
+                  <div className="flex flex-col gap-2">
+                    <span className="text-[10px] font-mono tracking-[2.5px] uppercase text-sky-400">
+                      {cause.category}
+                    </span>
+                    <h3 className="font-onest text-[22px] font-bold text-white leading-snug group-hover:text-sky-400 transition-colors">
+                      {cause.title}
+                    </h3>
+                    <p className="text-[14px] text-gray-300 font-light leading-relaxed mt-1">
+                      {cause.description}
+                    </p>
+                  </div>
+                </div>
+
+                <div className="pt-4 border-t border-white/10 flex items-center justify-between text-[12px] font-semibold text-white group-hover:text-sky-400 transition-colors">
+                  <span>READ FULL ADVOCACY STORY</span>
+                  <span>&rarr;</span>
+                </div>
+              </Link>
             </motion.div>
           ))}
         </div>

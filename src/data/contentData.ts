@@ -38,6 +38,19 @@ export interface Show {
   href: string;
 }
 
+export interface MissionCause {
+  id: string;
+  slug: string;
+  title: string;
+  category: string;
+  subtitle: string;
+  description: string;
+  image: string;
+  quote: string;
+  impactPoints: string[];
+  fullStory: string[];
+}
+
 export const journalPosts: JournalPost[] = [
   {
     id: "1",
@@ -178,6 +191,89 @@ export const musicTracks: Track[] = [
       "Leave the heavy noise of yesterday behind.",
       "Here inside the quiet, you are safe and whole,",
       "A peaceful sanctuary for your heart and soul."
+    ]
+  }
+];
+
+export const missionCauses: MissionCause[] = [
+  {
+    id: "1",
+    slug: "domestic-violence-advocacy",
+    title: "Domestic Violence Advocacy",
+    category: "SAFETY & HEALING",
+    subtitle: "Championing active awareness, shelter resources, and emotional restoration for victims.",
+    description: "Witnessing the physical and emotional impact firsthand in healthcare, I champion education, active awareness, and robust resources to help victims find safety, healing, and hope.",
+    image: "/images/drive/drive_image_33_1E-wbN1tlYlVzwQx5U7JeYAOQ3IRFVpTB.jpg",
+    quote: "Break the silence; no survivor should ever have to walk the path to freedom alone.",
+    impactPoints: [
+      "Partnering with emergency crisis centers and shelters for women and children.",
+      "Promoting trauma-informed healthcare protocols for recognizing domestic abuse.",
+      "Hosting workshops on emotional safety, legal advocacy, and financial independence."
+    ],
+    fullStory: [
+      "In over 15 years as a registered nurse in ICU and emergency settings, I cared for women who came in with injuries that no medical treatment alone could fix. The physical trauma was obvious, but the invisible psychological scars ran far deeper.",
+      "My advocacy focuses on creating immediate safety networks, supporting domestic violence shelters, and providing survivors with the practical tools and resources they need to rebuild their lives in dignity and independence.",
+      "Through Mrs. Universe 2026, I use my voice on international stages to shatter the stigma surrounding abuse, encouraging victims to speak up and reminding communities that protecting the vulnerable is a shared moral responsibility."
+    ]
+  },
+  {
+    id: "2",
+    slug: "holistic-healthcare",
+    title: "Holistic Healthcare",
+    category: "MIND, BODY & SPIRIT",
+    subtitle: "Integrating clinical excellence with compassionate, whole-person medical care.",
+    description: "Over 15 years caring for patients in ICU, ER, aesthetics, and mental health. Dedicated to compassionate care that treats the whole person, not just a clinical diagnosis.",
+    image: "/images/drive/drive_image_20_1inAr1DSxtCqLQ0RjiKXFkMm_yhadwt-s.jpg",
+    quote: "True healthcare goes beyond treating symptoms—it honours the human spirit behind the chart.",
+    impactPoints: [
+      "Advocating for patient-centered, compassionate care in high-acuity medical environments.",
+      "Bridging clinical medicine with aesthetics, wellness, and mental health care.",
+      "Promoting burnout prevention and mental well-being for frontline nurses and doctors."
+    ],
+    fullStory: [
+      "Medicine is an art as much as a science. Having spent over a decade in high-stress intensive care and emergency units, I learned that a patient's emotional and psychological state profoundly impacts their physical recovery.",
+      "When I expanded my practice into aesthetic nursing and psychiatric mental health, I saw how self-regard, confidence, and internal peace directly contribute to physical vitality and overall wellness.",
+      "My mission is to inspire healthcare systems and individual caregivers to adopt a truly holistic approach—one that treats every individual with empathy, dignity, and whole-person compassion."
+    ]
+  },
+  {
+    id: "3",
+    slug: "mental-health-youth-development",
+    title: "Mental Health & Youth Development",
+    category: "CONFIDENCE & WELL-BEING",
+    subtitle: "Empowering young people with resilience, self-worth, and mental health literacy.",
+    description: "Helping young people build confidence, resilience, and self-worth. Encouraging the next generation to prioritize mental well-being and understand that asking for help is a sign of strength.",
+    image: "/images/drive/drive_image_48_10lQwO0LJa4up8M98rZGjdfvRUEJB8WKU.jpg",
+    quote: "Teaching a young person that vulnerability is strength can rewrite the trajectory of their entire life.",
+    impactPoints: [
+      "Conducting youth resilience seminars and self-worth workshops in schools and community centers.",
+      "Normalizing conversations around anxiety, depression, and social media pressure.",
+      "Mentoring young women to embrace leadership, education, and personal boundaries."
+    ],
+    fullStory: [
+      "As a mother of two, Ariyana and Mikhail, I understand the unique emotional pressures facing the youth of today. Navigating academic demands, social media expectations, and mental health challenges requires more than just academic guidance—it requires emotional mentorship.",
+      "My youth development initiatives focus on equipping young people with emotional resilience, teaching them that asking for help is a sign of courage, not weakness.",
+      "By cultivating self-worth early in life, we empower the next generation of leaders to step into the world with confidence, empathy, and mental strength."
+    ]
+  },
+  {
+    id: "4",
+    slug: "cancer-awareness-early-screening",
+    title: "Cancer Awareness & Early Screening",
+    category: "SURVIVORSHIP & HOPE",
+    subtitle: "Promoting life-saving early detection, mammograms, and survivorship support.",
+    description: "As a cancer survivor myself, I promote early detection, screening, and strong emotional support. I hope my journey shows others that cancer does not have to define your future.",
+    image: "/images/drive/drive_image_49_1ZwkMnJoj4UO9yzov2y9O4sd-_wFTE7du.jpg",
+    quote: "Cancer may test your body, but it cannot touch the fire of your spirit or your future.",
+    impactPoints: [
+      "Driving community initiatives for accessible cancer screenings and early detection education.",
+      "Providing emotional support networks for patients and families undergoing cancer treatment.",
+      "Sharing my personal story as a survivor to inspire hope, strength, and resilience."
+    ],
+    fullStory: [
+      "Receiving a cancer diagnosis is one of the most frightening moments any person can face. As a survivor myself, I experienced the fear, uncertainty, and physical toll of treatment firsthand.",
+      "Yet through that trial, I gained an unshakable appreciation for life and a relentless passion for promoting early screening. Early detection saves lives—plain and simple.",
+      "I advocate tirelessly to ensure that women everywhere have access to preventative screenings, mammograms, and compassionate support networks, proving that there is vibrant, beautiful life after diagnosis."
     ]
   }
 ];
