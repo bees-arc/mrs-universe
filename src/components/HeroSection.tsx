@@ -21,8 +21,9 @@ export default function HeroSection() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/20 to-black/50 pointer-events-none" />
       </div>
 
-      {/* Top Main Section: Left Heading, Pill Button & Subtitle */}
-      <div className="relative z-10 max-w-7xl mx-auto w-full pt-2 flex flex-col items-start">
+      {/* Top Main Section Container aligned perfectly with max-w-7xl */}
+      <div className="relative z-10 max-w-7xl mx-auto w-full pt-2 flex flex-col md:flex-row items-start justify-between gap-8">
+        {/* Left Heading, Pill Button & Subtitle */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -48,6 +49,82 @@ export default function HeroSection() {
           <p className="max-w-md text-[13px] sm:text-[14px] text-gray-200 font-light leading-[1.65] tracking-wide drop-shadow-[0_2px_12px_rgba(0,0,0,0.95)] mt-1">
             Representing across the world with purpose, resilience, and a commitment to inspire, empower, and create meaningful impact.
           </p>
+        </motion.div>
+
+        {/* Floating Glassmorphism QR Support Card Aligned to the Content Container (Shifted Left) */}
+        <motion.div
+          initial={{ opacity: 0, x: 40 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.9, delay: 0.3 }}
+          className="hidden md:flex bg-black/60 border border-white/20 p-5 rounded-2xl backdrop-blur-md shadow-2xl items-center gap-5 max-w-sm self-start mt-6 lg:mt-10"
+        >
+          <div className="flex flex-col gap-1.5 flex-grow">
+            <span className="text-[9px] font-mono tracking-[2.5px] uppercase text-sky-400">
+              BE PART OF THE JOURNEY
+            </span>
+            <h3 className="font-onest text-[16px] font-bold text-white uppercase leading-snug">
+              Scan to Support
+            </h3>
+            <p className="text-[11px] text-gray-300 font-light leading-relaxed">
+              Your Support Helps Make This Crown Possible.
+            </p>
+            <Link
+              href="/support"
+              className="mt-1 text-[10px] font-bold tracking-[1.5px] uppercase text-sky-400 hover:text-white transition-colors"
+            >
+              SUPPORT PAGE &rarr;
+            </Link>
+          </div>
+
+          {/* High-Contrast Vector QR Code Thumbnail Box */}
+          <Link href="/support" className="w-20 h-20 bg-white p-2 rounded-xl border border-white/40 shadow-lg flex-shrink-0 flex items-center justify-center hover:scale-105 transition-transform">
+            <svg
+              viewBox="0 0 29 29"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-full h-full text-black"
+            >
+              <rect x="1" y="1" width="7" height="7" fill="black" />
+              <rect x="2" y="2" width="5" height="5" fill="white" />
+              <rect x="3" y="3" width="3" height="3" fill="black" />
+
+              <rect x="21" y="1" width="7" height="7" fill="black" />
+              <rect x="22" y="2" width="5" height="5" fill="white" />
+              <rect x="23" y="3" width="3" height="3" fill="black" />
+
+              <rect x="1" y="21" width="7" height="7" fill="black" />
+              <rect x="2" y="22" width="5" height="5" fill="white" />
+              <rect x="3" y="23" width="3" height="3" fill="black" />
+
+              <rect x="9" y="3" width="2" height="2" fill="black" />
+              <rect x="12" y="3" width="2" height="2" fill="black" />
+              <rect x="15" y="3" width="2" height="2" fill="black" />
+              <rect x="18" y="3" width="2" height="2" fill="black" />
+
+              <rect x="3" y="9" width="2" height="2" fill="black" />
+              <rect x="3" y="12" width="2" height="2" fill="black" />
+              <rect x="3" y="15" width="2" height="2" fill="black" />
+              <rect x="3" y="18" width="2" height="2" fill="black" />
+
+              <rect x="10" y="7" width="2" height="2" fill="black" />
+              <rect x="14" y="7" width="2" height="2" fill="black" />
+              <rect x="17" y="7" width="2" height="2" fill="black" />
+
+              <rect x="9" y="10" width="3" height="3" fill="black" />
+              <rect x="13" y="10" width="2" height="2" fill="black" />
+              <rect x="16" y="10" width="3" height="2" fill="black" />
+
+              <rect x="9" y="14" width="2" height="2" fill="black" />
+              <rect x="12" y="13" width="3" height="3" fill="black" />
+              <rect x="16" y="13" width="2" height="2" fill="black" />
+
+              <rect x="10" y="17" width="2" height="2" fill="black" />
+              <rect x="13" y="17" width="3" height="2" fill="black" />
+
+              <rect x="9" y="21" width="2" height="2" fill="black" />
+              <rect x="12" y="20" width="2" height="3" fill="black" />
+            </svg>
+          </Link>
         </motion.div>
       </div>
 
