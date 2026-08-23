@@ -11,37 +11,37 @@ const figmaGalleryImages = [
     id: "1",
     title: "Official Crowned Portrait",
     category: "Mrs. Universe 2026",
-    src: "/images/figma_hero_exact.png",
+    src: "/images/hero_pose_202608132331.jpg",
   },
   {
     id: "2",
-    title: "Seated Newspaper Editorial Portrait",
+    title: "High Fashion Editorial Portrait",
     category: "Editorial",
-    src: "/images/maleka-hero.png",
+    src: "/images/drive/drive_image_12_176R7jt93i6nAwWYvmq50qlGiNvt0H4UC.jpg",
   },
   {
     id: "3",
     title: "Healthcare & ICU Nursing Advocacy",
     category: "Advocacy & Service",
-    src: "/images/maleka-nurse.png",
+    src: "/images/drive/drive_image_16_1d5xXUAZ8DcnPAiZ59ZZiuIPabE4OZZ8p.jpg",
   },
   {
     id: "4",
     title: "Stage & Crowning Moment",
     category: "High Fashion",
-    src: "/images/maleka-crowning.png",
+    src: "/images/drive/drive_image_21_1FqsZMu3aCOmjB4fbFsYc-iNUrfi2gDhu.jpg",
   },
   {
     id: "5",
     title: "About the Journey Banner",
     category: "Music & Art",
-    src: "/images/figma_journey_banner.png",
+    src: "/images/drive/drive_image_29_1aHj2VcN-KBzf82g6yWX0l1CoW0W2BDkw.jpg",
   },
   {
     id: "6",
     title: "Full Editorial Portrait",
     category: "Official Gallery",
-    src: "/images/user-hero-exact.jpg",
+    src: "/images/drive/drive_image_36_125zMgjFFGhflz5Sexvc5sVotFaiHtart.jpg",
   },
 ];
 
@@ -61,7 +61,7 @@ export default function GalleryPage() {
               Sound, Stories &amp; Moments
             </h1>
             <p className="max-w-2xl text-[16px] text-gray-300 font-light leading-relaxed">
-              Explore official portraits, high fashion editorials, advocacy moments, and music releases of Maleka Morani - Mrs. Universe 2026 from the Figma design.
+              Explore official portraits, high fashion editorials, advocacy moments, and music releases of Maleka Morani - Mrs. Universe 2026.
             </p>
           </div>
         </div>
