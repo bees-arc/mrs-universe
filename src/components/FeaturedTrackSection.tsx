@@ -28,11 +28,11 @@ export default function FeaturedTrackSection() {
           {/* Background Image */}
           <div className="absolute inset-0 z-0">
             <Image
-              src="/images/figma_banner_exact.png"
+              src="/images/figma_journey_banner.png"
               alt="Maleka Morani - About the Journey Banner"
               fill
               sizes="(max-width: 1200px) 100vw, 1200px"
-              className="object-cover object-top opacity-100"
+              className="object-cover object-center opacity-100"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent pointer-events-none" />
           </div>

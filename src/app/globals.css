@@ -1,13 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Monda:wght@400;700&family=Onest:wght@400;500;600;700;800;900&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --font-sans: var(--font-onest), "Onest", system-ui, sans-serif;
-  --font-serif: var(--font-bricolage), "Bricolage Grotesque", Georgia, serif;
-  --font-bricolage: var(--font-bricolage), "Bricolage Grotesque", sans-serif;
-  --font-onest: var(--font-onest), "Onest", sans-serif;
-  --font-monda: var(--font-monda), "Monda", sans-serif;
-  --font-avenir-medium: "Avenir-Medium", sans-serif;
-  --font-avenir-bold: "Avenir Bold", sans-serif;
+  --font-sans: 'Onest', var(--font-onest), system-ui, sans-serif;
+  --font-serif: 'Bricolage Grotesque', var(--font-bricolage), Georgia, serif;
+  --font-bricolage: 'Bricolage Grotesque', var(--font-bricolage), sans-serif;
+  --font-onest: 'Onest', var(--font-onest), sans-serif;
+  --font-monda: 'Monda', var(--font-monda), sans-serif;
   
   --color-terracotta: #3b82f6;
   --color-terracotta-dark: #2563eb;
@@ -25,9 +24,21 @@
 body {
   background-color: #0a0a0a;
   color: #f3f4f6;
-  font-family: var(--font-sans);
+  font-family: 'Onest', var(--font-onest), sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.font-onest {
+  font-family: 'Onest', var(--font-onest), sans-serif !important;
+}
+
+.font-bricolage {
+  font-family: 'Bricolage Grotesque', var(--font-bricolage), sans-serif !important;
+}
+
+.font-monda {
+  font-family: 'Monda', var(--font-monda), sans-serif !important;
 }
 
 /* Custom scrollbar for dark aesthetic */

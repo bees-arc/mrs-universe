@@ -17,28 +17,28 @@ const tracks: Track[] = [
     title: "Midnight Air",
     duration: "3:46",
     tags: ["Indie", "Ambient", "Alternative"],
-    image: "/images/drive/drive_image_8_1-20Szicl7MIEkoFocoG84uE360V6xM7y.jpg",
+    image: "/images/drive/drive_image_10_1PTm409zqdRN7le74s7uKnLMt5hbelbCi.jpg",
   },
   {
     id: "2",
     title: "Before the Light",
     duration: "4:02",
     tags: ["Indie", "Acoustic", "Ambient"],
-    image: "/images/drive/drive_image_9_15_TyTtcODGCIvWMnyEEVrQj1cHmNnVxx.jpg",
+    image: "/images/drive/drive_image_11_14C-nzXMu7GLJonG1TfQsECsK46kdS72t.jpg",
   },
   {
     id: "3",
     title: "Fading Lines",
     duration: "3:58",
     tags: ["Indie", "Alternative", "Dream Pop"],
-    image: "/images/drive/drive_image_10_1PTm409zqdRN7le74s7uKnLMt5hbelbCi.jpg",
+    image: "/images/drive/drive_image_12_176R7jt93i6nAwWYvmq50qlGiNvt0H4UC.jpg",
   },
   {
     id: "4",
     title: "Where Silence Stays",
     duration: "4:15",
     tags: ["Indie", "Ambient", "Experimental"],
-    image: "/images/drive/drive_image_11_14C-nzXMu7GLJonG1TfQsECsK46kdS72t.jpg",
+    image: "/images/drive/drive_image_13_1TJZK6ce9uSoa163jhUIZ6uMwwOZ0vYm0.jpg",
   },
 ];
 
@@ -74,7 +74,7 @@ export default function DiscographySection() {
                   alt={track.title}
                   fill
                   sizes="(max-width: 768px) 100vw, 25vw"
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <div className="w-14 h-14 rounded-full bg-white text-black flex items-center justify-center shadow-xl transform scale-90 group-hover:scale-100 transition-transform duration-300">

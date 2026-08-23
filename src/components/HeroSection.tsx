@@ -6,28 +6,28 @@ import { motion } from "framer-motion";
 
 export default function HeroSection() {
   return (
-    <section id="hero-support" className="relative w-full min-h-[90vh] lg:min-h-[96vh] bg-black pt-28 pb-12 px-6 md:px-16 flex flex-col justify-between overflow-hidden">
-      {/* Full-Bleed Exact Figma Crowned Hero Photo */}
-      <div className="absolute inset-0 z-0">
+    <section id="hero-support" className="relative w-full min-h-screen bg-black pt-28 pb-6 px-6 md:px-16 flex flex-col justify-between overflow-hidden">
+      {/* Full-Bleed Hero Photo pinned to top to ensure face is 100% visible */}
+      <div className="absolute inset-0 z-0 w-full h-full">
         <Image
-          src="/images/figma_hero_exact.png"
-          alt="Maleka Morani Mrs. Universe 2026 - Crowned Portrait"
+          src="/images/hero_pose_202608132331.jpg"
+          alt="Maleka Morani Mrs. Universe 2026 - Hero Pose"
           fill
           priority
           sizes="100vw"
-          className="object-cover object-top opacity-100"
+          className="object-cover object-top sm:object-[center_15%] w-full h-full opacity-100"
         />
-        {/* Subtle dark gradient overlay at top and bottom */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/80 pointer-events-none" />
+        {/* Subtle dark gradient overlay so text remains readable without obscuring face */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/20 to-black/50 pointer-events-none" />
       </div>
 
       {/* Top Main Section: Left Heading, Pill Button & Subtitle */}
-      <div className="relative z-10 max-w-7xl mx-auto w-full pt-4 flex flex-col items-start">
+      <div className="relative z-10 max-w-7xl mx-auto w-full pt-2 flex flex-col items-start">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="max-w-2xl flex flex-col items-start gap-6"
+          className="max-w-2xl flex flex-col items-start gap-5"
         >
           {/* Main Headline Stack */}
           <h1 className="font-onest text-[46px] sm:text-[68px] md:text-[84px] lg:text-[94px] font-extrabold text-white leading-[1.0] tracking-tight drop-shadow-[0_4px_20px_rgba(0,0,0,0.95)]">
@@ -52,7 +52,7 @@ export default function HeroSection() {
       </div>
 
       {/* Bottom Right Giant Watermark Title */}
-      <div className="relative z-10 max-w-7xl mx-auto w-full pt-16 flex justify-end">
+      <div className="relative z-10 max-w-7xl mx-auto w-full pt-8 pb-2 flex justify-end">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}

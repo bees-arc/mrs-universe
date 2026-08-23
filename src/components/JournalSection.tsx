@@ -17,21 +17,21 @@ const posts: Post[] = [
     title: "The Feeling I Could Not Put Words",
     author: "Maleka Morani",
     date: "May 22, 2026",
-    image: "/images/drive/drive_image_20_1inAr1DSxtCqLQ0RjiKXFkMm_yhadwt-s.jpg",
+    image: "/images/drive/drive_image_14_15GqMOnh53e3hJn7Nj-4RoYCysoxk8rdy.jpg",
   },
   {
     id: "2",
     title: "Living Between Noise And Quiet Moments",
     author: "Maleka Morani",
     date: "June 14, 2026",
-    image: "/images/drive/drive_image_30_1M463yvV22xrPg8b4YcO8vVGFAgKoVLL0.jpg",
+    image: "/images/drive/drive_image_18_1C-T2M5XJnn4QdgdoPRTA_UmLJXfSgB42.jpg",
   },
   {
     id: "3",
     title: "Why I Prefer Simplicity Over Complexity",
     author: "Maleka Morani",
     date: "July 08, 2026",
-    image: "/images/drive/drive_image_18_1C-T2M5XJnn4QdgdoPRTA_UmLJXfSgB42.jpg",
+    image: "/images/drive/drive_image_20_1inAr1DSxtCqLQ0RjiKXFkMm_yhadwt-s.jpg",
   },
 ];
 

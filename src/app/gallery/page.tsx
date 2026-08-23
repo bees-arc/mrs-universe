@@ -6,60 +6,42 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import DiscographySection from "@/components/DiscographySection";
 
-const driveGalleryImages = [
+const figmaGalleryImages = [
   {
     id: "1",
-    title: "Royal Blue Gown on Desert Dunes",
+    title: "Official Crowned Portrait",
     category: "Mrs. Universe 2026",
-    src: "/images/drive/drive_image_32_1HYvhsEsCV6dkUPvsNiv-oPdOmKzDoOwu.jpg",
-  },
-  {
-    id: "2",
-    title: "Editorial Fashion Portrait",
-    category: "Editorial",
-    src: "/images/drive/drive_image_20_1inAr1DSxtCqLQ0RjiKXFkMm_yhadwt-s.jpg",
-  },
-  {
-    id: "3",
-    title: "Crowned Mrs. Universe Portrait",
-    category: "Official Portrait",
     src: "/images/figma_hero_exact.png",
   },
   {
+    id: "2",
+    title: "Seated Newspaper Editorial Portrait",
+    category: "Editorial",
+    src: "/images/maleka-hero.png",
+  },
+  {
+    id: "3",
+    title: "Healthcare & ICU Nursing Advocacy",
+    category: "Advocacy & Service",
+    src: "/images/maleka-nurse.png",
+  },
+  {
     id: "4",
-    title: "Emerald Green Couture",
-    category: "Fashion & Style",
-    src: "/images/drive/drive_image_33_1E-wbN1tlYlVzwQx5U7JeYAOQ3IRFVpTB.jpg",
+    title: "Stage & Crowning Moment",
+    category: "High Fashion",
+    src: "/images/maleka-crowning.png",
   },
   {
     id: "5",
-    title: "Metallic Gown Editorial",
-    category: "High Fashion",
-    src: "/images/drive/drive_image_31_10QPB8iIgOsgmoxzQDDfC1hlp0VyXlF02.jpg",
+    title: "About the Journey Banner",
+    category: "Music & Art",
+    src: "/images/figma_journey_banner.png",
   },
   {
     id: "6",
-    title: "ICU & Community Nursing Advocacy",
-    category: "Advocacy & Healthcare",
-    src: "/images/drive/drive_image_20_1inAr1DSxtCqLQ0RjiKXFkMm_yhadwt-s.jpg",
-  },
-  {
-    id: "7",
-    title: "Serene Blue Horizon",
-    category: "Creative Portrait",
-    src: "/images/drive/drive_image_48_10lQwO0LJa4up8M98rZGjdfvRUEJB8WKU.jpg",
-  },
-  {
-    id: "8",
-    title: "Empowerment & Leadership",
-    category: "Stage & Spotlight",
-    src: "/images/drive/drive_image_49_1ZwkMnJoj4UO9yzov2y9O4sd-_wFTE7du.jpg",
-  },
-  {
-    id: "9",
-    title: "Sunset Elegance",
-    category: "Editorial",
-    src: "/images/drive/drive_image_50_1uj-w1PvVpdSDFMGlRDPSPexEeNI_-rX5.jpg",
+    title: "Full Editorial Portrait",
+    category: "Official Gallery",
+    src: "/images/user-hero-exact.jpg",
   },
 ];
 
@@ -79,7 +61,7 @@ export default function GalleryPage() {
               Sound, Stories &amp; Moments
             </h1>
             <p className="max-w-2xl text-[16px] text-gray-300 font-light leading-relaxed">
-              Explore official portraits, high fashion editorials, advocacy moments, and music releases of Maleka Morani - Mrs. Universe 2026.
+              Explore official portraits, high fashion editorials, advocacy moments, and music releases of Maleka Morani - Mrs. Universe 2026 from the Figma design.
             </p>
           </div>
         </div>
@@ -87,7 +69,7 @@ export default function GalleryPage() {
         {/* Photo Gallery Grid */}
         <div className="px-6 md:px-16 max-w-7xl mx-auto w-full">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-            {driveGalleryImages.map((img, idx) => (
+            {figmaGalleryImages.map((img, idx) => (
               <motion.div
                 key={img.id}
                 initial={{ opacity: 0, y: 30 }}
@@ -101,7 +83,7 @@ export default function GalleryPage() {
                   alt={img.title}
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent opacity-80 group-hover:opacity-95 transition-opacity duration-300 flex flex-col justify-end p-6">
                   <span className="text-[10px] font-bold tracking-[2.5px] uppercase text-sky-400">

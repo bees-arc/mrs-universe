@@ -29,7 +29,7 @@ export default function AboutSection() {
           {/* Seated Newspaper / White Suit Image Card matching Figma */}
           <div className="relative w-full max-w-[320px] aspect-[4/5] rounded-2xl overflow-hidden border border-white/15 shadow-2xl mt-1 group">
             <Image
-              src="/images/maleka-hero.png"
+              src="/images/figma_about_section.png"
               alt="Maleka Morani - Mrs. Universe 2026 Seated Portrait"
               fill
               sizes="(max-width: 768px) 100vw, 320px"

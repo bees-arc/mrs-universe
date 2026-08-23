@@ -18,25 +18,25 @@ const causes: Cause[] = [
     title: "Domestic Violence Advocacy",
     category: "SAFETY & HEALING",
     description: "Witnessing the physical and emotional impact firsthand in healthcare, I champion education, active awareness, and robust resources to help victims find safety, healing, and hope.",
-    image: "/images/drive/drive_image_32_1HYvhsEsCV6dkUPvsNiv-oPdOmKzDoOwu.jpg",
+    image: "/images/drive/drive_image_33_1E-wbN1tlYlVzwQx5U7JeYAOQ3IRFVpTB.jpg",
   },
   {
     title: "Holistic Healthcare",
     category: "MIND, BODY & SPIRIT",
     description: "Over 15 years caring for patients in ICU, ER, aesthetics, and mental health. Dedicated to compassionate care that treats the whole person, not just a clinical diagnosis.",
-    image: "/images/maleka-nurse.png",
+    image: "/images/drive/drive_image_20_1inAr1DSxtCqLQ0RjiKXFkMm_yhadwt-s.jpg",
   },
   {
     title: "Mental Health & Youth Development",
     category: "CONFIDENCE & WELL-BEING",
     description: "Helping young people build confidence, resilience, and self-worth. Encouraging the next generation to prioritize mental well-being and understand that asking for help is a sign of strength.",
-    image: "/images/figma_hero_exact.png",
+    image: "/images/drive/drive_image_48_10lQwO0LJa4up8M98rZGjdfvRUEJB8WKU.jpg",
   },
   {
     title: "Cancer Awareness & Early Screening",
     category: "SURVIVORSHIP & HOPE",
     description: "As a cancer survivor myself, I promote early detection, screening, and strong emotional support. I hope my journey shows others that cancer does not have to define your future.",
-    image: "/images/maleka-crowning.png",
+    image: "/images/drive/drive_image_49_1ZwkMnJoj4UO9yzov2y9O4sd-_wFTE7du.jpg",
   },
 ];
 
