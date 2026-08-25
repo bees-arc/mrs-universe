@@ -31,7 +31,7 @@ export default function LivePerformanceSection() {
             transition={{ duration: 0.6 }}
             className="text-[11px] font-bold tracking-[3px] uppercase text-sky-400"
           >
-            EXCLUSIVE SESSION
+            MY JOURNEY
           </motion.span>
 
           <motion.h2
@@ -41,7 +41,7 @@ export default function LivePerformanceSection() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="font-onest text-[40px] sm:text-[56px] font-extrabold tracking-tight uppercase leading-none"
           >
-            Live Performance
+            My Story
           </motion.h2>
 
           <motion.p
@@ -51,7 +51,7 @@ export default function LivePerformanceSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-[16px] sm:text-[20px] font-light text-sky-400 tracking-wide uppercase"
           >
-            A moment, captured in sound.
+            Beyond the crown — a story of purpose.
           </motion.p>
 
           <motion.p
@@ -61,7 +61,7 @@ export default function LivePerformanceSection() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="text-[14px] sm:text-[16px] text-gray-300 font-light leading-relaxed"
           >
-            Recorded in a quiet space, where every note carries what words cannot.
+            From the first step to the stage — this is the journey behind Mrs. Universe. Raw, real, and unapologetically her.
           </motion.p>
         </div>
 
