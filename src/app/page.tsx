@@ -8,7 +8,6 @@ import AboutSection from "@/components/AboutSection";
 import LivePerformanceSection from "@/components/LivePerformanceSection";
 import JournalSection from "@/components/JournalSection";
 import NewsletterForm from "@/components/NewsletterForm";
-import SponsorSection from "@/components/SponsorSection";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -33,9 +32,6 @@ export default function Home() {
 
         {/* 9. Journal Section */}
         <JournalSection />
-
-        {/* 10. Sponsor Section */}
-        <SponsorSection />
 
         {/* 11. Newsletter Form */}
         <NewsletterForm />

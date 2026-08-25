@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { QRCodeSVG } from "qrcode.react";
 
 const sponsors = [
   {
@@ -102,20 +101,8 @@ export default function SponsorSection() {
                 </span>
               </div>
 
-              {/* QR Code */}
-              <div className="p-3 rounded-2xl bg-white shadow-2xl">
-                <QRCodeSVG
-                  value={s.url}
-                  size={160}
-                  bgColor="#ffffff"
-                  fgColor="#0a0a0a"
-                  level="H"
-                  marginSize={1}
-                />
-              </div>
-
               {/* Text */}
-              <div className="flex flex-col items-center gap-2 text-center">
+              <div className="flex flex-col items-center gap-2 text-center flex-1 justify-center">
                 <h3 className="text-white text-[18px] font-bold">{s.label}</h3>
                 <p className="text-gray-400 text-[13px] leading-relaxed max-w-xs">
                   {s.description}

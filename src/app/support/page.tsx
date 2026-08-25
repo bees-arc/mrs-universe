@@ -1,8 +1,9 @@
-﻿"use client";
+"use client";
 
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { QRCodeSVG } from "qrcode.react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -51,75 +52,57 @@ export default function SupportPage() {
               Make The Crown Possible
             </h2>
 
-            {/* Large High-Contrast Vector QR Code */}
-            <div className="relative z-10 w-48 h-48 sm:w-56 sm:h-56 bg-white p-4 rounded-2xl border border-white/40 shadow-xl flex items-center justify-center my-2">
-              <svg
-                viewBox="0 0 29 29"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-full h-full text-black"
-              >
-                <rect x="1" y="1" width="7" height="7" fill="black" />
-                <rect x="2" y="2" width="5" height="5" fill="white" />
-                <rect x="3" y="3" width="3" height="3" fill="black" />
+            {/* Two Real QR Codes */}
+            <div className="relative z-10 flex flex-col sm:flex-row gap-6 items-center justify-center w-full mt-2">
+              {/* GoFundMe QR */}
+              <div className="flex flex-col items-center gap-3">
+                <div className="bg-white p-3 rounded-2xl shadow-xl">
+                  <QRCodeSVG
+                    value="https://gofund.me/2fa635535"
+                    size={160}
+                    bgColor="#ffffff"
+                    fgColor="#0a0a0a"
+                    level="H"
+                    marginSize={1}
+                  />
+                </div>
+                <span className="text-[11px] font-bold tracking-[2px] uppercase text-[#00b966]">GoFundMe</span>
+                <a
+                  href="https://gofund.me/2fa635535"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[11px] font-semibold text-gray-300 hover:text-white transition-colors underline underline-offset-2"
+                >
+                  Donate now ↗
+                </a>
+              </div>
 
-                <rect x="21" y="1" width="7" height="7" fill="black" />
-                <rect x="22" y="2" width="5" height="5" fill="white" />
-                <rect x="23" y="3" width="3" height="3" fill="black" />
-
-                <rect x="1" y="21" width="7" height="7" fill="black" />
-                <rect x="2" y="22" width="5" height="5" fill="white" />
-                <rect x="3" y="23" width="3" height="3" fill="black" />
-
-                <rect x="9" y="3" width="2" height="2" fill="black" />
-                <rect x="12" y="3" width="2" height="2" fill="black" />
-                <rect x="15" y="3" width="2" height="2" fill="black" />
-                <rect x="18" y="3" width="2" height="2" fill="black" />
-
-                <rect x="3" y="9" width="2" height="2" fill="black" />
-                <rect x="3" y="12" width="2" height="2" fill="black" />
-                <rect x="3" y="15" width="2" height="2" fill="black" />
-                <rect x="3" y="18" width="2" height="2" fill="black" />
-
-                <rect x="10" y="7" width="2" height="2" fill="black" />
-                <rect x="14" y="7" width="2" height="2" fill="black" />
-                <rect x="17" y="7" width="2" height="2" fill="black" />
-
-                <rect x="9" y="10" width="3" height="3" fill="black" />
-                <rect x="13" y="10" width="2" height="2" fill="black" />
-                <rect x="16" y="10" width="3" height="2" fill="black" />
-                <rect x="20" y="10" width="2" height="2" fill="black" />
-                <rect x="23" y="10" width="2" height="2" fill="black" />
-
-                <rect x="9" y="14" width="2" height="2" fill="black" />
-                <rect x="12" y="13" width="3" height="3" fill="black" />
-                <rect x="16" y="13" width="2" height="2" fill="black" />
-                <rect x="19" y="14" width="2" height="2" fill="black" />
-                <rect x="22" y="13" width="3" height="3" fill="black" />
-
-                <rect x="10" y="17" width="2" height="2" fill="black" />
-                <rect x="13" y="17" width="3" height="2" fill="black" />
-                <rect x="17" y="17" width="2" height="2" fill="black" />
-                <rect x="20" y="17" width="3" height="2" fill="black" />
-                <rect x="24" y="17" width="2" height="2" fill="black" />
-
-                <rect x="9" y="21" width="2" height="2" fill="black" />
-                <rect x="12" y="20" width="2" height="3" fill="black" />
-                <rect x="15" y="21" width="3" height="2" fill="black" />
-                <rect x="19" y="20" width="2" height="2" fill="black" />
-                <rect x="22" y="21" width="2" height="2" fill="black" />
-                <rect x="25" y="20" width="2" height="2" fill="black" />
-
-                <rect x="10" y="24" width="2" height="2" fill="black" />
-                <rect x="13" y="24" width="3" height="3" fill="black" />
-                <rect x="17" y="25" width="2" height="2" fill="black" />
-                <rect x="20" y="24" width="3" height="2" fill="black" />
-                <rect x="24" y="24" width="2" height="3" fill="black" />
-              </svg>
+              {/* Venmo QR */}
+              <div className="flex flex-col items-center gap-3">
+                <div className="bg-white p-3 rounded-2xl shadow-xl">
+                  <QRCodeSVG
+                    value="https://venmo.com/u/Maleka-Morani"
+                    size={160}
+                    bgColor="#ffffff"
+                    fgColor="#0a0a0a"
+                    level="H"
+                    marginSize={1}
+                  />
+                </div>
+                <span className="text-[11px] font-bold tracking-[2px] uppercase text-[#c9a87a]">Venmo</span>
+                <a
+                  href="https://venmo.com/u/Maleka-Morani"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[11px] font-semibold text-gray-300 hover:text-white transition-colors underline underline-offset-2"
+                >
+                  Send via Venmo ↗
+                </a>
+              </div>
             </div>
 
             <p className="relative z-10 text-[13px] text-gray-300 font-light max-w-xs">
-              Scan this code with your phone camera to access official support links and sponsorship options.
+              Scan with your phone camera to go directly to the support link.
             </p>
           </motion.div>
 
