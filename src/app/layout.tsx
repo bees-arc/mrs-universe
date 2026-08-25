@@ -23,8 +23,13 @@ const monda = Monda({
 });
 
 export const metadata: Metadata = {
-  title: "Maleka Morani - Musician & Singer | Mrs. Universe 2026",
+  title: "Maleka Morani - Mrs. Universe 2026",
   description: "Official website for Maleka Morani - Mrs. Universe 2026, registered nurse, advocate, and musician creating music for the in-between.",
+  icons: {
+    icon: "/Layer_1.png",
+    shortcut: "/Layer_1.png",
+    apple: "/Layer_1.png",
+  },
 };
 
 export const viewport: Viewport = {
