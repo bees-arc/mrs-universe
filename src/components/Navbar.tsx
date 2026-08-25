@@ -1,7 +1,8 @@
-﻿"use client";
+"use client";
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 export default function Navbar() {
@@ -22,10 +23,18 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 md:px-12 h-20 flex items-center justify-between">
         {/* Brand Header Title */}
         <Link href="/" className="flex flex-col group">
-          <span className="font-monda text-[20px] font-bold tracking-[4px] uppercase text-white group-hover:text-[#c9a87a] transition-colors">
+          <span className="flex items-center gap-2 font-monda text-[20px] font-bold tracking-[4px] uppercase text-white group-hover:text-[#c9a87a] transition-colors">
+            <Image
+              src="/Layer_1.png"
+              alt="Crown"
+              width={22}
+              height={18}
+              className="flex-shrink-0 brightness-0 invert"
+              style={{ filter: 'brightness(0) saturate(100%) invert(72%) sepia(30%) saturate(500%) hue-rotate(5deg) brightness(95%) contrast(90%)' }}
+            />
             MALEKA MORANI
           </span>
-          <span className="text-[9px] font-mono tracking-[2.5px] uppercase text-gray-400 -mt-1">
+          <span className="text-[9px] font-mono tracking-[2.5px] uppercase text-gray-400 -mt-1 pl-7">
             MRS. UNIVERSE 2026
           </span>
         </Link>
