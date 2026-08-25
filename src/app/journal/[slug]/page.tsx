@@ -1,4 +1,4 @@
-import Image from "next/image";
+﻿import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Navbar from "@/components/Navbar";
@@ -32,7 +32,7 @@ export default async function JournalArticlePage({
         <div>
           <Link
             href="/journal"
-            className="inline-flex items-center gap-2 text-[12px] font-semibold text-sky-400 uppercase tracking-widest hover:text-white transition-colors"
+            className="inline-flex items-center gap-2 text-[12px] font-semibold text-[#c9a87a] uppercase tracking-widest hover:text-white transition-colors"
           >
             &larr; Back to Reflections &amp; Journal
           </Link>
@@ -40,7 +40,7 @@ export default async function JournalArticlePage({
 
         {/* Article Header */}
         <div className="flex flex-col gap-4 border-b border-white/10 pb-8">
-          <div className="flex items-center gap-4 text-[12px] font-mono text-sky-400 uppercase tracking-wider">
+          <div className="flex items-center gap-4 text-[12px] font-mono text-[#c9a87a] uppercase tracking-wider">
             <span>{post.category}</span>
             <span>•</span>
             <span>{post.date}</span>
@@ -71,11 +71,11 @@ export default async function JournalArticlePage({
 
         {/* Quote Callout */}
         {post.quote && (
-          <div className="bg-white/5 border-l-4 border-sky-400 p-8 rounded-r-2xl my-4 backdrop-blur-md">
+          <div className="bg-white/5 border-l-4 border-[#c9a87a] p-8 rounded-r-2xl my-4 backdrop-blur-md">
             <p className="font-onest text-[20px] sm:text-[24px] font-medium text-white italic leading-relaxed">
               &ldquo;{post.quote}&rdquo;
             </p>
-            <span className="block mt-3 text-[12px] font-mono text-sky-400 uppercase tracking-widest">
+            <span className="block mt-3 text-[12px] font-mono text-[#c9a87a] uppercase tracking-widest">
               — {post.author}, Mrs. Universe 2026
             </span>
           </div>
@@ -90,7 +90,7 @@ export default async function JournalArticlePage({
 
         {/* Author Bio Card */}
         <div className="bg-white/5 border border-white/15 rounded-3xl p-8 flex flex-col sm:flex-row gap-6 items-center shadow-xl mt-8">
-          <div className="relative w-24 h-24 rounded-full overflow-hidden flex-shrink-0 border-2 border-sky-400">
+          <div className="relative w-24 h-24 rounded-full overflow-hidden flex-shrink-0 border-2 border-[#c9a87a]">
             <Image
               src="/images/hero_pose_202608132331.jpg"
               alt="Maleka Morani"
@@ -108,7 +108,7 @@ export default async function JournalArticlePage({
             </p>
             <Link
               href="/story"
-              className="text-[12px] font-bold text-sky-400 uppercase tracking-wider hover:underline mt-1 inline-block"
+              className="text-[12px] font-bold text-[#c9a87a] uppercase tracking-wider hover:underline mt-1 inline-block"
             >
               READ FULL BIOGRAPHY &rarr;
             </Link>

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -59,7 +59,7 @@ export default function HeroSection() {
           className="hidden md:flex bg-black/60 border border-white/20 p-5 rounded-2xl backdrop-blur-md shadow-2xl items-center gap-5 max-w-sm self-start mt-6 lg:mt-10"
         >
           <div className="flex flex-col gap-1.5 flex-grow">
-            <span className="text-[9px] font-mono tracking-[2.5px] uppercase text-sky-400">
+            <span className="text-[9px] font-mono tracking-[2.5px] uppercase text-[#c9a87a]">
               BE PART OF THE JOURNEY
             </span>
             <h3 className="font-onest text-[16px] font-bold text-white uppercase leading-snug">
@@ -70,7 +70,7 @@ export default function HeroSection() {
             </p>
             <Link
               href="/support"
-              className="mt-1 text-[10px] font-bold tracking-[1.5px] uppercase text-sky-400 hover:text-white transition-colors"
+              className="mt-1 text-[10px] font-bold tracking-[1.5px] uppercase text-[#c9a87a] hover:text-white transition-colors"
             >
               SUPPORT PAGE &rarr;
             </Link>

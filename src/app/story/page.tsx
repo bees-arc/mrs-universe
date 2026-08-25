@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -14,14 +14,14 @@ export default function StoryPage() {
       <main className="pt-28 pb-20 px-6 md:px-16 max-w-7xl mx-auto w-full flex flex-col gap-16">
         {/* Page Banner Header */}
         <div className="flex flex-col gap-4 border-b border-white/10 pb-8">
-          <span className="text-[11px] font-bold tracking-[3px] uppercase text-sky-400">
+          <span className="text-[11px] font-bold tracking-[3px] uppercase text-[#c9a87a]">
             MY STORY &amp; JOURNEY
           </span>
           <h1 className="font-onest text-[40px] sm:text-[60px] md:text-[72px] font-extrabold tracking-tight uppercase leading-none">
             Resilience, Service &amp; Purpose
           </h1>
           <p className="max-w-2xl text-[16px] text-gray-300 font-light leading-relaxed">
-            Some stories were never meant to be spoken—they are meant to be lived. Discover Maleka Morani&apos;s journey as a nurse, mother, cancer survivor, widow, and Mrs. Universe 2026.
+            Some stories were never meant to be spokenâ€”they are meant to be lived. Discover Maleka Morani&apos;s journey as a nurse, mother, cancer survivor, widow, and Mrs. Universe 2026.
           </p>
         </div>
 
@@ -56,13 +56,13 @@ export default function StoryPage() {
             </h2>
             <div className="flex flex-col gap-5 text-[15px] text-gray-300 font-light leading-[1.8]">
               <p>
-                <strong className="font-bold text-white">Maleka Morani</strong> has spent over 15 years caring for patients in high-acuity environments including ICU, emergency care, aesthetics, and psychiatric mental health. Her career in medicine has taught her that true healing happens when we care for the whole person—mind, body, and spirit.
+                <strong className="font-bold text-white">Maleka Morani</strong> has spent over 15 years caring for patients in high-acuity environments including ICU, emergency care, aesthetics, and psychiatric mental health. Her career in medicine has taught her that true healing happens when we care for the whole personâ€”mind, body, and spirit.
               </p>
               <p>
                 As a cancer survivor and widow who raised two wonderful children, Ariyana and Mikhail, Maleka understands firsthand the power of resilience. Her life experiences have fueled her passion for domestic violence advocacy, mental health education, and women empowerment.
               </p>
               <p>
-                As Mrs. Universe 2026, Maleka uses her international platform to elevate critical causes, demonstrating that our challenges do not define us—they become the foundation of our strength.
+                As Mrs. Universe 2026, Maleka uses her international platform to elevate critical causes, demonstrating that our challenges do not define usâ€”they become the foundation of our strength.
               </p>
             </div>
 

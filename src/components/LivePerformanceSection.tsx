@@ -29,7 +29,7 @@ export default function LivePerformanceSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-[11px] font-bold tracking-[3px] uppercase text-sky-400"
+            className="text-[11px] font-bold tracking-[3px] uppercase text-[#c9a87a]"
           >
             MY JOURNEY
           </motion.span>
@@ -49,7 +49,7 @@ export default function LivePerformanceSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-[16px] sm:text-[20px] font-light text-sky-400 tracking-wide uppercase"
+            className="text-[16px] sm:text-[20px] font-light text-[#c9a87a] tracking-wide uppercase"
           >
             Beyond the crown — a story of purpose.
           </motion.p>

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -41,7 +41,7 @@ export default function GalleryPage() {
         {/* Page Banner Header */}
         <div className="px-6 md:px-16 max-w-7xl mx-auto w-full">
           <div className="flex flex-col gap-4 border-b border-white/10 pb-8">
-            <span className="text-[11px] font-bold tracking-[3px] uppercase text-sky-400">
+            <span className="text-[11px] font-bold tracking-[3px] uppercase text-[#c9a87a]">
               MEDIA &amp; GALLERY
             </span>
             <h1 className="font-onest text-[40px] sm:text-[60px] md:text-[72px] font-extrabold tracking-tight uppercase leading-none">

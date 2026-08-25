@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -13,7 +13,7 @@ export default function ContactPage() {
         {/* Page Banner Header */}
         <div className="px-6 md:px-16 max-w-7xl mx-auto w-full">
           <div className="flex flex-col gap-4 border-b border-white/10 pb-8">
-            <span className="text-[11px] font-bold tracking-[3px] uppercase text-sky-400">
+            <span className="text-[11px] font-bold tracking-[3px] uppercase text-[#c9a87a]">
               GET IN TOUCH
             </span>
             <h1 className="font-bricolage text-[40px] sm:text-[60px] md:text-[72px] font-extrabold tracking-tight uppercase leading-none">
@@ -39,15 +39,15 @@ export default function ContactPage() {
               
               <div className="flex flex-col gap-4 pt-2 text-[14px] text-gray-300">
                 <div className="flex items-center gap-3">
-                  <span className="text-sky-400 font-bold">Email:</span>
+                  <span className="text-[#c9a87a] font-bold">Email:</span>
                   <span>contact@malekamorani.com</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <span className="text-sky-400 font-bold">Role:</span>
+                  <span className="text-[#c9a87a] font-bold">Role:</span>
                   <span>Mrs. Universe 2026 Candidate &amp; Registered Nurse</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <span className="text-sky-400 font-bold">Location:</span>
+                  <span className="text-[#c9a87a] font-bold">Location:</span>
                   <span>International / Global Advocacy</span>
                 </div>
               </div>

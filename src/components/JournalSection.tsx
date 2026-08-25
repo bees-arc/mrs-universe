@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -15,13 +15,13 @@ export default function JournalSection() {
             <h2 className="font-onest text-[36px] sm:text-[48px] font-extrabold tracking-tight uppercase">
               Journal
             </h2>
-            <p className="text-[14px] font-light text-sky-400 tracking-wide uppercase">
+            <p className="text-[14px] font-light text-[#c9a87a] tracking-wide uppercase">
               Fragments Of a Quiet Journey.
             </p>
           </div>
           <Link
             href="/journal"
-            className="text-[12px] font-bold tracking-[2px] uppercase text-sky-400 hover:text-white transition-colors"
+            className="text-[12px] font-bold tracking-[2px] uppercase text-[#c9a87a] hover:text-white transition-colors"
           >
             VIEW ALL ESSAYS &rarr;
           </Link>
@@ -55,11 +55,11 @@ export default function JournalSection() {
                 <div className="flex flex-col gap-2">
                   <div className="flex items-center gap-3 text-[11px] font-mono text-gray-400 uppercase">
                     <span>{post.author}</span>
-                    <span>•</span>
+                    <span>â€¢</span>
                     <span>{post.date}</span>
                   </div>
 
-                  <h3 className="font-onest text-[20px] font-bold text-white group-hover:text-sky-400 transition-colors leading-snug">
+                  <h3 className="font-onest text-[20px] font-bold text-white group-hover:text-[#c9a87a] transition-colors leading-snug">
                     {post.title}
                   </h3>
                 </div>

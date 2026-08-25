@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -13,7 +13,7 @@ export default function DiscographySection() {
           <h2 className="font-onest text-[36px] sm:text-[48px] font-extrabold tracking-tight uppercase">
             Discography
           </h2>
-          <p className="text-[14px] sm:text-[16px] font-light text-sky-400 tracking-wide uppercase">
+          <p className="text-[14px] sm:text-[16px] font-light text-[#c9a87a] tracking-wide uppercase">
             Moments, Turned Into Sound.
           </p>
         </div>
@@ -58,7 +58,7 @@ export default function DiscographySection() {
                   ))}
                 </div>
                 <div className="flex items-center justify-between mt-1">
-                  <h4 className="font-onest text-[18px] font-bold text-white group-hover:text-sky-400 transition-colors">
+                  <h4 className="font-onest text-[18px] font-bold text-white group-hover:text-[#c9a87a] transition-colors">
                     {track.title}
                   </h4>
                   <span className="text-[12px] text-gray-400 font-mono">

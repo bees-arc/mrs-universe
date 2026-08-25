@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 
@@ -16,7 +16,7 @@ export default function NewsletterForm() {
 
   return (
     <section id="newsletter" className="w-full bg-[#0a0a0a] py-20 px-6 md:px-12 border-t border-white/10 text-white relative">
-      <div className="max-w-5xl mx-auto bg-gradient-to-r from-blue-950/40 via-black/80 to-purple-950/40 border border-white/15 rounded-3xl p-8 sm:p-14 shadow-2xl flex flex-col md:flex-row items-center justify-between gap-8 backdrop-blur-xl">
+      <div className="max-w-5xl mx-auto bg-gradient-to-r from-[#2e1f0e]/40 via-black/80 to-[#2e1f0e]/40 border border-white/15 rounded-3xl p-8 sm:p-14 shadow-2xl flex flex-col md:flex-row items-center justify-between gap-8 backdrop-blur-xl">
         {/* Text Details */}
         <div className="flex flex-col gap-3 max-w-md text-left">
           <h2 className="font-bricolage text-[32px] sm:text-[42px] font-extrabold tracking-tight uppercase leading-tight">
@@ -40,7 +40,7 @@ export default function NewsletterForm() {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="Your email, if you’d like to stay"
+                placeholder="Your email, if youâ€™d like to stay"
                 className="w-full px-6 py-3.5 rounded-full bg-white/10 border border-white/20 text-white placeholder-gray-400 text-[13px] focus:outline-none focus:border-white/50 transition-colors"
               />
               <button

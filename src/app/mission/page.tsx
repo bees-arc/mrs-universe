@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -15,7 +15,7 @@ export default function MissionPage() {
       <main className="pt-28 pb-20 px-6 md:px-16 max-w-7xl mx-auto w-full flex flex-col gap-16">
         {/* Page Banner Header */}
         <div className="flex flex-col gap-4 border-b border-white/10 pb-8">
-          <span className="text-[11px] font-bold tracking-[3px] uppercase text-sky-400">
+          <span className="text-[11px] font-bold tracking-[3px] uppercase text-[#c9a87a]">
             MY MISSION &amp; ADVOCACY
           </span>
           <h1 className="font-onest text-[40px] sm:text-[60px] md:text-[72px] font-extrabold tracking-tight uppercase leading-none">
@@ -52,10 +52,10 @@ export default function MissionPage() {
                   </div>
 
                   <div className="flex flex-col gap-2">
-                    <span className="text-[10px] font-mono tracking-[2.5px] uppercase text-sky-400">
+                    <span className="text-[10px] font-mono tracking-[2.5px] uppercase text-[#c9a87a]">
                       {cause.category}
                     </span>
-                    <h3 className="font-onest text-[22px] font-bold text-white leading-snug group-hover:text-sky-400 transition-colors">
+                    <h3 className="font-onest text-[22px] font-bold text-white leading-snug group-hover:text-[#c9a87a] transition-colors">
                       {cause.title}
                     </h3>
                     <p className="text-[14px] text-gray-300 font-light leading-relaxed mt-1">
@@ -64,7 +64,7 @@ export default function MissionPage() {
                   </div>
                 </div>
 
-                <div className="pt-4 border-t border-white/10 flex items-center justify-between text-[12px] font-semibold text-white group-hover:text-sky-400 transition-colors">
+                <div className="pt-4 border-t border-white/10 flex items-center justify-between text-[12px] font-semibold text-white group-hover:text-[#c9a87a] transition-colors">
                   <span>READ FULL ADVOCACY STORY</span>
                   <span>&rarr;</span>
                 </div>
@@ -74,7 +74,7 @@ export default function MissionPage() {
         </div>
 
         {/* Call to Action */}
-        <div className="bg-gradient-to-r from-blue-950/40 via-black to-purple-950/40 border border-white/15 rounded-3xl p-10 text-center flex flex-col items-center gap-6">
+        <div className="bg-gradient-to-r from-[#2e1f0e]/40 via-black to-[#2e1f0e]/40 border border-white/15 rounded-3xl p-10 text-center flex flex-col items-center gap-6">
           <h2 className="font-onest text-[28px] sm:text-[36px] font-bold uppercase tracking-tight">
             Join the Movement for Change
           </h2>

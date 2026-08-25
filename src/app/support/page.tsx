@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -14,7 +14,7 @@ export default function SupportPage() {
       <main className="pt-28 pb-20 px-6 md:px-16 max-w-7xl mx-auto w-full flex flex-col gap-16">
         {/* Header Banner */}
         <div className="flex flex-col gap-4 border-b border-white/10 pb-8">
-          <span className="text-[11px] font-bold tracking-[3px] uppercase text-sky-400">
+          <span className="text-[11px] font-bold tracking-[3px] uppercase text-[#c9a87a]">
             SUPPORT MY JOURNEY
           </span>
           <h1 className="font-onest text-[40px] sm:text-[60px] md:text-[72px] font-extrabold tracking-tight uppercase leading-none">
@@ -44,7 +44,7 @@ export default function SupportPage() {
               />
             </div>
 
-            <span className="relative z-10 text-[11px] font-bold tracking-[3px] uppercase text-sky-400">
+            <span className="relative z-10 text-[11px] font-bold tracking-[3px] uppercase text-[#c9a87a]">
               SCAN TO SUPPORT
             </span>
             <h2 className="relative z-10 font-onest text-[28px] font-bold text-white uppercase">

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import Link from "next/link";
@@ -22,7 +22,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 md:px-12 h-20 flex items-center justify-between">
         {/* Brand Header Title */}
         <Link href="/" className="flex flex-col group">
-          <span className="font-monda text-[20px] font-bold tracking-[4px] uppercase text-white group-hover:text-sky-400 transition-colors">
+          <span className="font-monda text-[20px] font-bold tracking-[4px] uppercase text-white group-hover:text-[#c9a87a] transition-colors">
             MALEKA MORANI
           </span>
           <span className="text-[9px] font-mono tracking-[2.5px] uppercase text-gray-400 -mt-1">
@@ -38,8 +38,8 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className={`text-[11px] font-semibold tracking-[2px] uppercase transition-colors hover:text-sky-400 ${
-                  isActive ? "text-sky-400 font-bold border-b border-sky-400 pb-0.5" : "text-gray-300"
+                className={`text-[11px] font-semibold tracking-[2px] uppercase transition-colors hover:text-[#c9a87a] ${
+                  isActive ? "text-[#c9a87a] font-bold border-b border-[#c9a87a] pb-0.5" : "text-gray-300"
                 }`}
               >
                 {link.name}
@@ -80,7 +80,7 @@ export default function Navbar() {
               key={link.name}
               href={link.href}
               onClick={() => setMobileMenuOpen(false)}
-              className="text-[12px] font-semibold tracking-[2px] uppercase text-gray-300 hover:text-sky-400 transition-colors py-1"
+              className="text-[12px] font-semibold tracking-[2px] uppercase text-gray-300 hover:text-[#c9a87a] transition-colors py-1"
             >
               {link.name}
             </Link>

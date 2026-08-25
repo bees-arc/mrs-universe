@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -13,7 +13,7 @@ export default function FeaturedTrackSection() {
           <h2 className="font-onest text-[32px] sm:text-[44px] md:text-[52px] font-extrabold text-white uppercase tracking-tight">
             ABOUT THE JOURNEY
           </h2>
-          <span className="text-[10px] sm:text-[11px] font-bold tracking-[3px] uppercase text-sky-400 pb-1">
+          <span className="text-[10px] sm:text-[11px] font-bold tracking-[3px] uppercase text-[#c9a87a] pb-1">
             LATEST RELEASE
           </span>
         </div>

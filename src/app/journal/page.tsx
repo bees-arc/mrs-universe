@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -15,14 +15,14 @@ export default function JournalIndexPage() {
       <main className="pt-28 pb-20 px-6 md:px-16 max-w-7xl mx-auto w-full flex flex-col gap-16">
         {/* Page Header */}
         <div className="flex flex-col gap-4 border-b border-white/10 pb-8">
-          <span className="text-[11px] font-bold tracking-[3px] uppercase text-sky-400">
+          <span className="text-[11px] font-bold tracking-[3px] uppercase text-[#c9a87a]">
             OFFICIAL BLOG &amp; ESSAYS
           </span>
           <h1 className="font-onest text-[40px] sm:text-[60px] md:text-[72px] font-extrabold tracking-tight uppercase leading-none">
             Journal &amp; Reflections
           </h1>
           <p className="max-w-2xl text-[16px] text-gray-300 font-light leading-relaxed">
-            Personal writings, clinical reflections, and advocacy essays by Maleka Morani—Mrs. Universe 2026, registered nurse, survivor, and mentor.
+            Personal writings, clinical reflections, and advocacy essays by Maleka Moraniâ€”Mrs. Universe 2026, registered nurse, survivor, and mentor.
           </p>
         </div>
 
@@ -49,12 +49,12 @@ export default function JournalIndexPage() {
                     />
                   </div>
 
-                  <div className="flex items-center justify-between text-[11px] font-mono text-sky-400 uppercase tracking-wider">
+                  <div className="flex items-center justify-between text-[11px] font-mono text-[#c9a87a] uppercase tracking-wider">
                     <span>{post.category}</span>
                     <span className="text-gray-400">{post.readTime}</span>
                   </div>
 
-                  <h3 className="font-onest text-[22px] font-bold text-white group-hover:text-sky-400 transition-colors leading-snug">
+                  <h3 className="font-onest text-[22px] font-bold text-white group-hover:text-[#c9a87a] transition-colors leading-snug">
                     {post.title}
                   </h3>
 
@@ -63,7 +63,7 @@ export default function JournalIndexPage() {
                   </p>
                 </div>
 
-                <div className="pt-4 border-t border-white/10 flex items-center justify-between text-[12px] font-semibold text-white group-hover:text-sky-400 transition-colors">
+                <div className="pt-4 border-t border-white/10 flex items-center justify-between text-[12px] font-semibold text-white group-hover:text-[#c9a87a] transition-colors">
                   <span>READ FULL ESSAY</span>
                   <span>&rarr;</span>
                 </div>

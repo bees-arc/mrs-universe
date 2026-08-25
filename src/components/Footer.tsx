@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Link from "next/link";
 
@@ -14,7 +14,7 @@ export default function Footer() {
               <span className="font-monda text-[22px] font-bold tracking-[4px] uppercase text-white">
                 MALEKA MORANI
               </span>
-              <span className="text-[10px] font-mono tracking-[2.5px] uppercase text-sky-400">
+              <span className="text-[10px] font-mono tracking-[2.5px] uppercase text-[#c9a87a]">
                 MRS. UNIVERSE 2026
               </span>
             </Link>
@@ -25,23 +25,23 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div className="md:col-span-4 flex flex-col gap-3">
-            <span className="text-[11px] font-mono text-sky-400 uppercase tracking-widest">
+            <span className="text-[11px] font-mono text-[#c9a87a] uppercase tracking-widest">
               NAVIGATION
             </span>
             <div className="grid grid-cols-2 gap-2 text-[12px] font-semibold text-gray-300 uppercase tracking-wider">
-              <Link href="/" className="hover:text-sky-400 transition-colors">Home</Link>
-              <Link href="/story" className="hover:text-sky-400 transition-colors">My Story</Link>
-              <Link href="/mission" className="hover:text-sky-400 transition-colors">My Mission</Link>
-              <Link href="/gallery" className="hover:text-sky-400 transition-colors">Gallery</Link>
-              <Link href="/journal" className="hover:text-sky-400 transition-colors">Journal</Link>
-              <Link href="/support" className="hover:text-sky-400 transition-colors">Support</Link>
-              <Link href="/contact" className="hover:text-sky-400 transition-colors">Contact</Link>
+              <Link href="/" className="hover:text-[#c9a87a] transition-colors">Home</Link>
+              <Link href="/story" className="hover:text-[#c9a87a] transition-colors">My Story</Link>
+              <Link href="/mission" className="hover:text-[#c9a87a] transition-colors">My Mission</Link>
+              <Link href="/gallery" className="hover:text-[#c9a87a] transition-colors">Gallery</Link>
+              <Link href="/journal" className="hover:text-[#c9a87a] transition-colors">Journal</Link>
+              <Link href="/support" className="hover:text-[#c9a87a] transition-colors">Support</Link>
+              <Link href="/contact" className="hover:text-[#c9a87a] transition-colors">Contact</Link>
             </div>
           </div>
 
           {/* Advocacy & Contact */}
           <div className="md:col-span-3 flex flex-col gap-3">
-            <span className="text-[11px] font-mono text-sky-400 uppercase tracking-widest">
+            <span className="text-[11px] font-mono text-[#c9a87a] uppercase tracking-widest">
               CONNECT &amp; SPONSOR
             </span>
             <p className="text-[13px] text-gray-400 font-light leading-relaxed">

@@ -1,4 +1,4 @@
-import Image from "next/image";
+﻿import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Navbar from "@/components/Navbar";
@@ -32,7 +32,7 @@ export default async function MissionCauseDetailPage({
         <div>
           <Link
             href="/mission"
-            className="inline-flex items-center gap-2 text-[12px] font-semibold text-sky-400 uppercase tracking-widest hover:text-white transition-colors"
+            className="inline-flex items-center gap-2 text-[12px] font-semibold text-[#c9a87a] uppercase tracking-widest hover:text-white transition-colors"
           >
             &larr; Back to All Advocacy Causes
           </Link>
@@ -40,7 +40,7 @@ export default async function MissionCauseDetailPage({
 
         {/* Header */}
         <div className="flex flex-col gap-4 border-b border-white/10 pb-8">
-          <span className="text-[12px] font-mono text-sky-400 uppercase tracking-widest">
+          <span className="text-[12px] font-mono text-[#c9a87a] uppercase tracking-widest">
             {cause.category}
           </span>
           <h1 className="font-onest text-[36px] sm:text-[56px] font-extrabold text-white leading-tight uppercase">
@@ -64,11 +64,11 @@ export default async function MissionCauseDetailPage({
         </div>
 
         {/* Quote Callout */}
-        <div className="bg-white/5 border-l-4 border-sky-400 p-8 rounded-r-2xl my-2 backdrop-blur-md">
+        <div className="bg-white/5 border-l-4 border-[#c9a87a] p-8 rounded-r-2xl my-2 backdrop-blur-md">
           <p className="font-onest text-[20px] sm:text-[24px] font-medium text-white italic leading-relaxed">
             &ldquo;{cause.quote}&rdquo;
           </p>
-          <span className="block mt-3 text-[12px] font-mono text-sky-400 uppercase tracking-widest">
+          <span className="block mt-3 text-[12px] font-mono text-[#c9a87a] uppercase tracking-widest">
             — Maleka Morani, Mrs. Universe 2026
           </span>
         </div>
@@ -81,7 +81,7 @@ export default async function MissionCauseDetailPage({
           <ul className="flex flex-col gap-3 text-[15px] text-gray-300 font-light">
             {cause.impactPoints.map((point, index) => (
               <li key={index} className="flex items-start gap-3">
-                <span className="text-sky-400 font-bold">&check;</span>
+                <span className="text-[#c9a87a] font-bold">&check;</span>
                 <span>{point}</span>
               </li>
             ))}

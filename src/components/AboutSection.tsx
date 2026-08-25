@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -18,7 +18,7 @@ export default function AboutSection() {
         >
           {/* Section Header */}
           <div className="flex flex-col gap-1.5">
-            <span className="text-[11px] font-bold tracking-[3px] uppercase text-sky-400">
+            <span className="text-[11px] font-bold tracking-[3px] uppercase text-[#c9a87a]">
               ABOUT
             </span>
             <h3 className="font-onest text-[24px] sm:text-[30px] md:text-[34px] font-bold leading-[1.25] tracking-tight text-white">
